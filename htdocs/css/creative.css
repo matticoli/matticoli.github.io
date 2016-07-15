@@ -414,6 +414,9 @@ img::-moz-selection {
   color: white;
   background: transparent;
 }
+.img-responsive {
+    heigh: 100px;
+}
 body {
   webkit-tap-highlight-color: #222222;
 }

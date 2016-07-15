@@ -9,10 +9,6 @@ $('.category').click( function(event) {
     
 });
 
-$('.portfolio-box').click( function(event) {
-    //TODO: Proj popups
-});
-
 $(document).ready( function() {
-    $('.projects').load("fledging.html");
+    $('.projects').load("fledging.html").hide();
 });
