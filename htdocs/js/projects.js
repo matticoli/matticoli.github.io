@@ -10,5 +10,5 @@ $('.category').click( function(event) {
 });
 
 $(document).ready( function() {
-    $('.projects').load("fledging.html").hide();
+    $('.projects').load("projects.html").hide();
 });
