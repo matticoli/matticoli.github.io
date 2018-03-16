@@ -1,20 +1,18 @@
 body {
-    font-family: 'Montserrat';
+    margin: 0;
     background-color: #B0B0B0;
     color: whitesmoke;
-    letter-spacing: 1px;
-    padding: 50px;
-    margin: 0;
     overflow: hidden;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
 }
 
 .page {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
+    position: fixed;
+    margin: 0;
     width: 100vw;
     height: 100vh;
-    transform: translate(0%);
     box-shadow: 0px 0px 30px 0px black inset;
 }
 
@@ -33,10 +31,12 @@ body {
 
 .title {
     font-size: 3vh;
-    top: -1vh;
-    padding: 2vh;
     height: 15%;
-    width: 100%;
+    width: 100vw;
+}
+
+.title h2 {
+    padding: 1vh;
 }
 
 .footer {
