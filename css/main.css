@@ -77,10 +77,10 @@ body {
     width: calc(100% );
     height: calc(100% );
     line-height: 20vh;
-    box-shadow: 0px 0px 50px 0px black inset;
+    box-shadow: 0vw 0vh 80px 0px grey inset;
     color: white;
-    background-color: #555555;
-    opacity: 0.8;
+    background-color: rgba(80, 80, 80, .2);
+    opacity: 1;
     font-size: 3.5vw;
     text-shadow: 1px 1px 10px black;
 }
@@ -91,21 +91,25 @@ a.button{
 
 .box[data-button="linkedin"] {
     left: 10%;
+    background-color: #0077B5;
     background-image: url('../media/linkedin.png');
 }
 
 .box[data-button="github"] {
     left: 40%;
+    background-color: #23527c;
     background-image: url('../media/github.png');
 }
 
 .box[data-button="resume"] {
     left: 70%;
+    background-color: green;
     background-image: url('../media/resume.png');
 }
 
 .box[data-button="portfolio"] {
     /*background-size: 50%;*/
     /*left: 70%;*/
+    background-color: orangered;
     background-image: url('../media/portfolio.png');
 }
