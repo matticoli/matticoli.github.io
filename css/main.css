@@ -23,8 +23,8 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0px 0px 30px 0px black;
-    background-size: contain;
+    box-shadow: 0px 0px 30px 0px whitesmoke;
+    background-size: auto 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -33,54 +33,79 @@ body {
     font-size: 3vh;
     height: 15%;
     width: 100vw;
+    line-height: 2.5vh;
 }
 
 .title h2 {
-    padding: 1vh;
+    /*padding: 1vh;*/
 }
 
 .footer {
     font-size: 2vh;
-    bottom: 2vh;
-    height: 10%;
+    bottom: 0vh;
+    height: 8vh;
+    line-height: 2vh;
     width: 100%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.footer a {
+    color: #5bc0de;
 }
 
 .button {
-    top: 30%;
-    width: 20vw;
     height: 20vh;
     background-color: white;
     transform: translateY(0%);
     transition: 0.5s transform ease;
 }
 
+.button-top {
+    width: 20vw;
+    top: 25%;
+}
+
+.button-bottom {
+    width: 80vw;
+    left: 10%;
+    top: 58%;
+}
+
 .button-label {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    line-height: 300%;
+    /*margin: 1vh;*/
+    width: calc(100% );
+    height: calc(100% );
+    line-height: 20vh;
     box-shadow: 0px 0px 50px 0px black inset;
     color: white;
-    background-color: darkslategrey;
+    background-color: #555555;
     opacity: 0.8;
-    font-size: 4vw;
-    text-shadow: 0px 0px 30px black;
+    font-size: 3.5vw;
+    text-shadow: 1px 1px 10px black;
+}
+
+a.button{
+    text-decoration: none;
 }
 
 .box[data-button="linkedin"] {
     left: 10%;
-    background-image: url('https://image.flaticon.com/icons/png/512/8/8707.png');
-    background-size: 45%;
+    background-image: url('../media/linkedin.png');
 }
 
 .box[data-button="github"] {
     left: 40%;
-    background-image: url('https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png');
+    background-image: url('../media/github.png');
 }
 
 .box[data-button="resume"] {
-    background-size: 80%;
     left: 70%;
-    background-image: url('http://maxpixel.freegreatpicture.com/static/photo/1x/Paper-Headline-News-Icon-Highlight-Newspaper-2935367.png');
+    background-image: url('../media/resume.png');
+}
+
+.box[data-button="portfolio"] {
+    /*background-size: 50%;*/
+    /*left: 70%;*/
+    background-image: url('../media/portfolio.png');
 }
