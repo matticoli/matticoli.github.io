@@ -3,35 +3,40 @@
 <html>
 
 <head>
+    <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!-- Title/Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Virtual Portfolio</title>
     <meta name="description" content="Virtual Portfolio">
 
+    <!-- Scripts -->
     <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
     <script src="js/main.js" charset="utf-8"></script>
+
 </head>
 
 <body>
     <div class="page">
+        <!-- Header -->
         <div class="box title">
             <h2>
                 Mikel Matticoli
             </h2>
-            <h5>
+            <h5 class="subtitle">
                 Designer — Developer — Engineer
             </h5>
-            <!--TODO: Move iconbg to container and shrink, fix header, footer link color, animations-->
         </div>
+
+        <!-- Tiles -->
         <a class="box button button-top" data-button="linkedin" href="https://www.linkedin.com/in/matticoli/">
-            <!--<div class="box button-background" data-button="linkedin">-->
                 <div class="box button-label" data-overlay="linkedin">LinkedIn</div>
-            <!--</div>-->
         </a>
         <a class="box button button-top" data-button="github" href="https://github.com/matticoli">
             <div class="box button-label" data-overlay="github">GitHub</div>
@@ -39,14 +44,15 @@
         <a class="box button button-top" data-button="resume" href="https://goo.gl/WUD2hH">
             <div class="box button-label ">Resume</div>
         </a>
-        <a class="box button button-bottom" data-button="portfolio" href="#">
+        <a class="box button button-bottom" data-button="portfolio" href="./portfolio/">
             <div class="box button-label ">Portfolio</div>
         </a>
+
+        <!-- Footer -->
         <div class="box footer">
-            <h4>(c) Mikel Matticoli<br><a href="mailto:mikel.matticoli@gmail.com">mikel.matticoli@gmail.com</a> • <a href="mailto:mikel.matticoli@gmail.com">732-798-0251</a></h4>
+            <h4>© 2018 Mikel Matticoli<br><a href="mailto:mikel.matticoli@gmail.com">mikel.matticoli@gmail.com</a> • <a href="tel:1-732-798-0251">1-732-798-0251</a></h4>
         </div>
     </div>
 </body>
-—
 
 </html>

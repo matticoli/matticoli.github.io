@@ -1,9 +1,14 @@
+$bg-color: #cbcbd1;
+$text-color: white;
+$box-shadow: 0px 0px 30px 0px darkslategray;
+$highlight-color: rgba(160, 195, 255, 0.85);
+
 body {
   margin: 0;
-  background-color: #cbcbd1;
-  color: white;
+  background-color: $bg-color;
+  color: $text-color;
   overflow: hidden;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   letter-spacing: 1px;
 }
 
@@ -13,7 +18,7 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  box-shadow: 0px 0px 30px 0px darkslategray inset;
+  box-shadow: $box-shadow inset;
 }
 
 .box {
@@ -23,7 +28,7 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0px 0px 30px 0px darkslategray;
+  box-shadow: $box-shadow;
   background-size: auto 60%;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,9 +39,10 @@ body {
   height: 15%;
   width: 100vw;
   line-height: 2.5vh;
-}
-.title .subtitle {
-  color: rgba(160, 195, 255, 0.85);
+
+  .subtitle {
+    color: $highlight-color;
+  }
 }
 
 .footer {
@@ -47,14 +53,15 @@ body {
   width: 100%;
   padding-left: 1vw;
   padding-right: 1vw;
-}
-.footer a {
-  color: rgba(160, 195, 255, 0.85);
+
+  a {
+    color: $highlight-color;
+  }
 }
 
 .button {
   height: 20vh;
-  background-color: rgba(160, 195, 255, 0.85);
+  background-color: $highlight-color;
   transform: translateY(0%);
   transition: 0.5s transform ease;
 }
@@ -74,7 +81,7 @@ body {
   width: calc(100%);
   height: calc(100%);
   line-height: 20vh;
-  color: white;
+  color: $text-color;
   background-color: rgba(80, 80, 80, 0.2);
   opacity: 1;
   font-size: 3.5vw;
@@ -86,29 +93,27 @@ a.button {
   text-decoration: none;
 }
 
-.box[data-button=linkedin] {
+.box[data-button="linkedin"] {
   left: 10%;
   /*background-color: #0077B5;*/
-  background-image: url("../media/linkedin.png");
+  background-image: url('../media/linkedin.png');
 }
 
-.box[data-button=github] {
+.box[data-button="github"] {
   left: 40%;
   /*background-color: #6e5494;*/
-  background-image: url("../media/github.png");
+  background-image: url('../media/github.png');
 }
 
-.box[data-button=resume] {
+.box[data-button="resume"] {
   left: 70%;
   /*background-color: #88acba;*/
-  background-image: url("../media/resume.png");
+  background-image: url('../media/resume.png');
 }
 
-.box[data-button=portfolio] {
+.box[data-button="portfolio"] {
   /*background-size: 50%;*/
   /*left: 70%;*/
   /*background-color: teal;*/
-  background-image: url("../media/portfolio.png");
+  background-image: url('../media/portfolio.png');
 }
-
-/*# sourceMappingURL=main.css.map */
