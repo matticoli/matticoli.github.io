@@ -3,7 +3,6 @@ $text-color: white;
 $box-shadow: 0px 0px 30px 0px darkslategrey;
 $highlight-color: rgba(160, 195, 255, 0.85);
 
-
 body {
   margin: 0;
   background-color: $bg-color;
@@ -11,6 +10,15 @@ body {
   overflow: hidden;
   font-family: 'Montserrat';
   letter-spacing: 1px;
+}
+
+.page {
+  display: block;
+  position: fixed;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  box-shadow: $box-shadow inset;
 }
 
 .box {
@@ -49,4 +57,27 @@ body {
   a {
     color: $highlight-color;
   }
+}
+
+.button {
+  height: 20vh;
+  background-color: $highlight-color;
+  transform: translateY(0%);
+  transition: 0.5s transform ease;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+.button-label {
+  width: calc(100%);
+  height: calc(100%);
+  line-height: 20vh;
+  color: $text-color;
+  background-color: rgba(80, 80, 80, 0.2);
+  opacity: 1;
+  font-size: 3.5vw;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px black;
 }

@@ -26,3 +26,69 @@
     }
   }
 }
+
+#app {
+  position: absolute;
+  width: 100vw;
+  height: 84vh;
+  top: 8%;
+
+  #categories {
+    .button {
+      //Override
+      height: 22vh;
+      width: 45vw;
+      background-size: cover;
+    }
+
+    #cat-all {
+      position: absolute;
+      width: 94vw;
+      top: 5vh;
+      left: 3vw;
+      // Tile Background Image by David OReilly
+      background-image: url('../media/everything.png')
+    }
+
+    #cat-software {
+      position: absolute;
+      top: 31vh;
+      left: 3vw;
+      background-image: url('../media/software.png')
+    }
+
+    #cat-games {
+      position: absolute;
+      top: 31vh;
+      right: 3vw;
+      background-image: url('../media/games.png')
+    }
+
+    #cat-web {
+      position: absolute;
+      top: 57vh;
+      left: 3vw;
+      background-image: url('../media/websites.png')
+    }
+
+    #cat-bots {
+      position: absolute;
+      top: 57vh;
+      right: 3vw;
+      background-image: url('../media/robots.png')
+
+    }
+  }
+
+  #projects {
+    overflow-y: scroll;
+
+    .button {
+      //Override
+      height: 22vh;
+      width: 45vw;
+    }
+  }
+
+}
+

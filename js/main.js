@@ -1,11 +1,6 @@
 let slideout = () => {
-    let tiles = $('.button-top').toArray().concat($('.button-bottom').toArray());//$('[data-button]').toArray();
+    let tiles = $('.button').toArray());
     for (let key in tiles) {
-        // if($(tiles[key]).hasClass("button-top")) {
-        //     $($(tiles[key])).css("transform", "translate(-100vw)");
-        // } else {
-        //     $($(tiles[key])).css("transform", "translate(100vw)");
-        // }
         switch ($(tiles[key]).attr("data-button")) {
             case "linkedin":
                 $($(tiles[key])).css("transform", "translate(-40vw)");

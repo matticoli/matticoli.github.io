@@ -1,21 +1,5 @@
 @import 'theme';
 
-.page {
-  display: block;
-  position: fixed;
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-  box-shadow: $box-shadow inset;
-}
-
-.button {
-  height: 20vh;
-  background-color: $highlight-color;
-  transform: translateY(0%);
-  transition: 0.5s transform ease;
-}
-
 .button-top {
   width: 20vw;
   top: 25%;
@@ -25,22 +9,6 @@
   width: 80vw;
   left: 10%;
   top: 58%;
-}
-
-.button-label {
-  width: calc(100%);
-  height: calc(100%);
-  line-height: 20vh;
-  color: $text-color;
-  background-color: rgba(80, 80, 80, 0.2);
-  opacity: 1;
-  font-size: 3.5vw;
-  font-weight: bold;
-  text-shadow: 1px 1px 10px black;
-}
-
-a.button {
-  text-decoration: none;
 }
 
 .box[data-button="linkedin"] {

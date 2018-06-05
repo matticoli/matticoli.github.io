@@ -19,13 +19,20 @@
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <!-- Vue -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
     <!-- Custom -->
     <script src="../js/main.js" charset="utf-8"></script>
+    <script defer src="../js/portfolio.js" charset="utf-8"></script>
 
 </head>
 
-<body>
+<noscript>
+    <h2>Uh oh... This page requires javascript!</h2>
+</noscript>
+
+<body hidden>
+<div class="page">
 <!-- Header -->
 <div class="box title">
     <h2>
@@ -45,13 +52,39 @@
 </div>
 
 <!-- Vue App -->
-<div class="app">
+<div id="app" class=".app">
+    <!-- Render project list if category selected -->
+    <div id="projects" v-if="selectedCategories && selectedCategories.length > 0">
+        <a id="cat-all" title="All Projects" class="box button" >
+            <div class="box button-label">All Projects</div>
+        </a>
+    </div>
+    <!-- Render category tiles if none selected -->
+    <div id="categories" v-else>
+        <!-- Tile Background Image by David OReilly -->
+        <a id="cat-all" title="All Projects" class="box button" >
+            <div class="box button-label">All Projects</div>
+        </a>
+        <a id="cat-software" title="Software" class="box button" >
+            <div class="box button-label">Software</div>
+        </a>
+        <a id="cat-games" title="Games" class="box button" >
+            <div class="box button-label">Games</div>
+        </a>
+        <a id="cat-web" title="Websites" class="box button" >
+            <div class="box button-label">Websites</div>
+        </a><a id="cat-bots" title="Bots & Stuff" class="box button" >
+            <div class="box button-label">Bots & Stuff</div>
+        </a>
 
+    </div>
 </div>
 
 <!-- Footer -->
 <div class="box footer">
     <h4 title="Questions? Comments? Job Offer? Feel free to email/text/call me!">© 2018 Mikel Matticoli<br><a href="mailto:mikel.matticoli@gmail.com">mikel.matticoli@gmail.com</a> • <a href="tel:1-732-798-0251">1-732-798-0251</a></h4>
+</div>
+
 </div>
 
 </body>
