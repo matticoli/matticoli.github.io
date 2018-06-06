@@ -26,7 +26,7 @@ let app = new Vue({
             'Websites': false,
             'Bots & Stuff': false,
         },
-        showProjects: true,
+        showProjects: false,
         projects: projects,
     },
     methods: {
