@@ -1,5 +1,5 @@
 let slideout = () => {
-    let tiles = $('.button').toArray());
+    let tiles = $('.button').toArray();
     for (let key in tiles) {
         switch ($(tiles[key]).attr("data-button")) {
             case "linkedin":
@@ -19,7 +19,7 @@ let slideout = () => {
 };
 
 let slidein = () => {
-    let tiles = $('[data-button]').toArray();
+    let tiles = $('.button').toArray();
     for (let key in tiles) {
         setTimeout
         $($(tiles[key])).css("transform", "");

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
 
+<!--suppress ALL -->
 <head>
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -22,8 +22,8 @@
     <script defer src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 
     <!-- Custom -->
-    <script src="../js/main.js" charset="utf-8"></script>
     <script defer src="../js/portfolio.js" charset="utf-8"></script>
+    <script defer src="../js/main.js" charset="utf-8"></script>
 
 </head>
 
@@ -53,31 +53,52 @@
 
 <!-- Vue App -->
 <div id="app" class=".app">
-    <!-- Render project list if category selected -->
-    <div id="projects" v-if="selectedCategories && selectedCategories.length > 0">
-        <a id="cat-all" title="All Projects" class="box button" >
-            <div class="box button-label">All Projects</div>
-        </a>
-    </div>
-    <!-- Render category tiles if none selected -->
-    <div id="categories" v-else>
-        <!-- Tile Background Image by David OReilly -->
-        <a id="cat-all" title="All Projects" class="box button" >
-            <div class="box button-label">All Projects</div>
-        </a>
-        <a id="cat-software" title="Software" class="box button" >
-            <div class="box button-label">Software</div>
-        </a>
-        <a id="cat-games" title="Games" class="box button" >
-            <div class="box button-label">Games</div>
-        </a>
-        <a id="cat-web" title="Websites" class="box button" >
-            <div class="box button-label">Websites</div>
-        </a><a id="cat-bots" title="Bots & Stuff" class="box button" >
-            <div class="box button-label">Bots & Stuff</div>
-        </a>
 
-    </div>
+    <transition name="fade">
+        <!-- Render project list if category selected -->
+        <div id="projects" v-if="showProjects">
+            <div>
+                <template v-for="category in Object.keys(selectedCategories)">
+                    <div class="category-toggle"
+                         v-bind:id="category"
+                         v-bind:active="selectedCategories[category]"
+                         v-on:click="handleCategoryChange">
+                        <!--<img v-if="selectedCategories[category]"-->
+                             <!--src=""-->
+                             <!--v-bind:id="category"-->
+                             <!--v-on:click="handleCategoryChange">-->
+                        {{ category }}
+                    </div>
+                </template>
+            </div>
+
+            <!--<a id="cat-all" title="All Projects" class="box button" >-->
+                <!--<div class="box button-label">All Projects</div>-->
+            <!--</a>-->
+
+        </div>
+    </transition>
+    <transition name="fade">
+        <!-- Render category tiles if none selected -->
+        <div id="categories" v-if="!showProjects">
+            <!-- Tile Background Image by David OReilly -->
+            <!--suppress HtmlUnknownAttribute -->
+            <div id="cat-all" title="All Projects" class="box button" v-on:click="showAllCategories">
+                <div class="box button-label">All Projects</div>
+            </div>
+            <a id="cat-software" title="Software" class="box button" >
+                <div class="box button-label">Software</div>
+            </a>
+            <a id="cat-games" title="Games" class="box button" >
+                <div class="box button-label">Games</div>
+            </a>
+            <a id="cat-web" title="Websites" class="box button" >
+                <div class="box button-label">Websites</div>
+            </a><a id="cat-bots" title="Bots & Stuff" class="box button" >
+                <div class="box button-label">Bots & Stuff</div>
+            </a>
+        </div>
+    </transition>
 </div>
 
 <!-- Footer -->

@@ -1,4 +1,5 @@
 $bg-color: #cbcbd1;
+$box-color: #404040;
 $text-color: white;
 $box-shadow: 0px 0px 30px 0px darkslategrey;
 $highlight-color: rgba(160, 195, 255, 0.85);
@@ -24,7 +25,7 @@ body {
 .box {
   display: block;
   position: absolute;
-  background-color: #404040;
+  background-color: $box-color;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -80,4 +81,9 @@ a.button {
   font-size: 3.5vw;
   font-weight: bold;
   text-shadow: 1px 1px 10px black;
+}
+
+
+input[type=checkbox] {
+  transform: scale(2);
 }

@@ -75,6 +75,10 @@ a.button {
   text-shadow: 1px 1px 10px black;
 }
 
+input[type=checkbox] {
+  transform: scale(2);
+}
+
 .button-top {
   width: 20vw;
   top: 25%;
