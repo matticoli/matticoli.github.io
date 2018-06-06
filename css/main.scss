@@ -1,0 +1,37 @@
+@import 'theme';
+
+.button-top {
+  width: 20vw;
+  top: 25%;
+}
+
+.button-bottom {
+  width: 80vw;
+  left: 10%;
+  top: 58%;
+}
+
+.box[data-button="linkedin"] {
+  left: 10%;
+  /*background-color: #0077B5;*/
+  background-image: url('../media/linkedin.png');
+}
+
+.box[data-button="github"] {
+  left: 40%;
+  /*background-color: #6e5494;*/
+  background-image: url('../media/github.png');
+}
+
+.box[data-button="resume"] {
+  left: 70%;
+  /*background-color: #88acba;*/
+  background-image: url('../media/resume.png');
+}
+
+.box[data-button="portfolio"] {
+  /*background-size: 50%;*/
+  /*left: 70%;*/
+  /*background-color: teal;*/
+  background-image: url('../media/portfolio.png');
+}

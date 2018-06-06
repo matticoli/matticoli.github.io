@@ -1,86 +1,118 @@
 body {
-    margin: 0;
-    background-color: #B0B0B0;
-    color: whitesmoke;
-    overflow: hidden;
-    font-family: 'Montserrat';
-    letter-spacing: 1px;
+  margin: 0;
+  background-color: #cbcbd1;
+  color: white;
+  overflow: hidden;
+  font-family: "Montserrat";
+  letter-spacing: 1px;
 }
 
 .page {
-    display: block;
-    position: fixed;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    box-shadow: 0px 0px 30px 0px black inset;
+  display: block;
+  position: fixed;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  box-shadow: 0px 0px 30px 0px darkslategrey inset;
 }
 
 .box {
-    display: block;
-    position: absolute;
-    background-color: #404040;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 0px 30px 0px black;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  background-color: #404040;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 30px 0px darkslategrey;
+  background-size: auto 60%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title {
-    font-size: 3vh;
-    height: 15%;
-    width: 100vw;
+  font-size: 3vh;
+  height: 15%;
+  width: 100vw;
+  line-height: 2.5vh;
 }
-
-.title h2 {
-    padding: 1vh;
+.title .subtitle {
+  color: rgba(160, 195, 255, 0.85);
 }
 
 .footer {
-    font-size: 2vh;
-    bottom: 2vh;
-    height: 10%;
-    width: 100%;
+  font-size: 1.8vh;
+  height: 8vh;
+  top: 92vh;
+  line-height: 2vh;
+  width: 100%;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+.footer a {
+  color: rgba(160, 195, 255, 0.85);
 }
 
 .button {
-    top: 30%;
-    width: 20vw;
-    height: 20vh;
-    background-color: white;
-    transform: translateY(0%);
-    transition: 0.5s transform ease;
+  height: 20vh;
+  background-color: rgba(160, 195, 255, 0.85);
+  transform: translateY(0%);
+  transition: 0.5s transform ease;
+}
+
+a.button {
+  text-decoration: none;
 }
 
 .button-label {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    line-height: 300%;
-    box-shadow: 0px 0px 50px 0px black inset;
-    color: white;
-    background-color: darkslategrey;
-    opacity: 0.8;
-    font-size: 4vw;
-    text-shadow: 0px 0px 30px black;
+  width: calc(100%);
+  height: calc(100%);
+  line-height: 20vh;
+  color: white;
+  background-color: rgba(80, 80, 80, 0.2);
+  opacity: 1;
+  font-size: 3.5vw;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px black;
 }
 
-.box[data-button="linkedin"] {
-    left: 10%;
-    background-image: url('https://image.flaticon.com/icons/png/512/8/8707.png');
-    background-size: 45%;
+input[type=checkbox] {
+  transform: scale(2);
 }
 
-.box[data-button="github"] {
-    left: 40%;
-    background-image: url('https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png');
+.button-top {
+  width: 20vw;
+  top: 25%;
 }
 
-.box[data-button="resume"] {
-    background-size: 80%;
-    left: 70%;
-    background-image: url('http://maxpixel.freegreatpicture.com/static/photo/1x/Paper-Headline-News-Icon-Highlight-Newspaper-2935367.png');
+.button-bottom {
+  width: 80vw;
+  left: 10%;
+  top: 58%;
 }
+
+.box[data-button=linkedin] {
+  left: 10%;
+  /*background-color: #0077B5;*/
+  background-image: url("../media/linkedin.png");
+}
+
+.box[data-button=github] {
+  left: 40%;
+  /*background-color: #6e5494;*/
+  background-image: url("../media/github.png");
+}
+
+.box[data-button=resume] {
+  left: 70%;
+  /*background-color: #88acba;*/
+  background-image: url("../media/resume.png");
+}
+
+.box[data-button=portfolio] {
+  /*background-size: 50%;*/
+  /*left: 70%;*/
+  /*background-color: teal;*/
+  background-image: url("../media/portfolio.png");
+}
+
+/*# sourceMappingURL=main.css.map */

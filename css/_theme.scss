@@ -1,0 +1,90 @@
+$bg-color: #cbcbd1;
+$box-color: #404040;
+$text-color: white;
+$box-shadow: 0px 0px 30px 0px darkslategrey;
+$highlight-color: rgba(160, 195, 255, 0.85);
+
+body {
+  margin: 0;
+  background-color: $bg-color;
+  color: $text-color;
+  overflow: hidden;
+  font-family: 'Montserrat';
+  letter-spacing: 1px;
+}
+
+.page {
+  display: block;
+  position: fixed;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  box-shadow: $box-shadow inset;
+}
+
+.box {
+  display: block;
+  position: absolute;
+  background-color: $box-color;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: $box-shadow;
+  background-size: auto 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 3vh;
+  height: 15%;
+  width: 100vw;
+  line-height: 2.5vh;
+
+  .subtitle {
+    color: $highlight-color;
+  }
+}
+
+.footer {
+  font-size: 1.8vh;
+  //bottom: 0vh;
+  height: 8vh;
+  top: 92vh;
+  line-height: 2vh;
+  width: 100%;
+  padding-left: 1vw;
+  padding-right: 1vw;
+
+  a {
+    color: $highlight-color;
+  }
+}
+
+.button {
+  height: 20vh;
+  background-color: $highlight-color;
+  transform: translateY(0%);
+  transition: 0.5s transform ease;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+.button-label {
+  width: calc(100%);
+  height: calc(100%);
+  line-height: 20vh;
+  color: $text-color;
+  background-color: rgba(80, 80, 80, 0.2);
+  opacity: 1;
+  font-size: 3.5vw;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px black;
+}
+
+
+input[type=checkbox] {
+  transform: scale(2);
+}

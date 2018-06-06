@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<!--suppress ALL -->
+<head>
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../css/portfolio.css" />
+
+    <!-- Title/Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Virtual Portfolio</title>
+    <meta name="description" content="Virtual Portfolio">
+
+    <!-- Scripts -->
+    <!-- JQuery -->
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!-- Vue -->
+    <script defer src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+    <!-- Custom -->
+    <script src="../js/ie.js" charset="utf-8"></script>
+    <script src="../js/projects.js" charset="utf-8"></script>
+    <script defer src="../js/portfolio.js" charset="utf-8"></script>
+    <script defer src="../js/main.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+
+<!-- If JS is disabled, display error -->
+<noscript>
+    <div class="box title noscript">
+        <h2>Uh oh... This page requires javascript!</h2>
+    </div>
+    <span title="Go Back" class="box button button-top noscript" data-button="github" href="../">
+        <div class="box button-label" data-overlay="github">Enable it in your browser settings</div>
+    </span>
+    <a title="Go Back" class="box button button-top noscript" data-button="github" href="../">
+        <div class="box button-label" data-overlay="github">Go Back</div>
+    </a>
+</noscript>
+
+<!-- Start page hidden, fade in with js -->
+<div style="display: none;" class="page">
+
+<!-- Vue App -->
+    <div id="app" class=".app">
+        <!-- Header -->
+        <div class="box title">
+            <h2>
+                MATTICOLI
+                <h5 v-bind:title="showProjects ? 'Back' : 'Back to landing page'"
+                    class="backlink">
+                    <a v-bind:href="showProjects ? './' : '../'">
+                        <img alt="Back Arrow" src="../media/back-arrow.png">
+                        &nbsp;
+                        <template v-if="!showProjects">
+                            <img alt="GitHub Icon" src="../media/github.png">
+                            &nbsp;
+                            <img alt="LinkedIn Icon" src="../media/linkedin.png">
+                            &nbsp;
+                            <img alt="Resume Icon" src="../media/resume.png">
+                        </template>
+                    </a>
+                </h5>
+            </h2>
+        </div>
+
+        <transition name="slide">
+            <!-- Render project list if category selected -->
+            <div id="projects" v-if="showProjects">
+                <div>
+                    <template v-for="category in Object.keys(selectedCategories)">
+                        <div class="category-toggle"
+                             v-bind:id="category"
+                             v-bind:active="selectedCategories[category]"
+                             v-on:click="handleCategoryChange">
+                            {{ category }}
+                        </div>
+                    </template>
+                </div>
+                <template v-for="proj in projects">
+                    <transition name="slide">
+                        <a class="box button project-tile"
+                           v-bind:href="proj.view"
+                             v-if="selectedCategories[proj.category]"
+                             v-bind:id="'tile-'+proj.id"
+                             v-bind:title="proj.name"
+                             v-bind:style="'background-image: url(\'' + proj.cover + '\');'">
+                            <div class="box button-label">{{ proj.name }}</div>
+                        </a>
+                    </transition>
+                </template>
+
+            </div>
+        </transition>
+        <transition name="slide">
+            <!-- Render category tiles if none selected -->
+            <div id="categories" v-if="!showProjects">
+                <!-- Tile Background Image by David OReilly -->
+                <!--suppress HtmlUnknownAttribute -->
+                <div id="cat-all" title="All Projects" class="box button" v-on:click="showAllCategories">
+                    <div class="box button-label">All Projects</div>
+                </div>
+                <div id="cat-software" title="Software" class="box button" v-on:click="showCategory">
+                    <div class="box button-label">Software</div>
+                </div>
+                <div id="cat-games" title="Games" class="box button" v-on:click="showCategory">
+                    <div class="box button-label">Games/VR</div>
+                </div>
+                <div id="cat-web" title="Websites" class="box button" v-on:click="showCategory">
+                    <div class="box button-label">Websites</div>
+                </div>
+                <div id="cat-bots" title="Bots & Stuff" class="box button" v-on:click="showCategory">
+                    <div class="box button-label">Bots & Stuff</div>
+                </div>
+            </div>
+        </transition>
+    </div>
+
+    <!-- Footer -->
+    <div class="box footer">
+        <h4 title="Questions? Comments? Job Offer? Feel free to email/text/call me!">© 2018 Mikel Matticoli<br><a href="mailto:mikel.matticoli@gmail.com">mikel.matticoli@gmail.com</a> • <a href="tel:1-732-798-0251">1-732-798-0251</a></h4>
+    </div>
+</div>
+
+</body>
+</html>
