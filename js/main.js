@@ -29,10 +29,10 @@ let slidein = () => {
 
 
 $(document).ready(function () {
-    $('body').fadeOut(0);
+    $('.page').fadeOut(0);
     slideout();
     setTimeout(() => {
-        $('body').fadeIn(200);
+        $('.page').fadeIn(200);
         slidein();
     }, 300);
 
@@ -42,11 +42,11 @@ $(document).ready(function () {
         const newLoc = event.currentTarget.href;
         slideout();
         setTimeout( ()=> {
-            $('body').fadeOut(200);
+            $('.page').fadeOut(200);
             window.location = newLoc;
         }, 300);
     });
 });
 
 
-$('body').fadeOut(0);
+$('.page').fadeOut(0);
