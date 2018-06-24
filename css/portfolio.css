@@ -58,6 +58,7 @@ body {
   background-color: rgba(160, 195, 255, 0.85);
   transform: translateY(0%);
   transition: 0.5s transform ease;
+  cursor: pointer;
 }
 
 a.button {
@@ -74,6 +75,7 @@ a.button {
   font-size: 3.5vw;
   font-weight: bold;
   text-shadow: 1px 1px 10px black;
+  cursor: pointer;
 }
 
 input[type=checkbox] {
@@ -116,6 +118,7 @@ span.noscript .button-label {
   left: 56vw;
   padding-right: 4vw;
   text-align: right;
+  cursor: pointer;
 }
 .title .backlink a {
   text-decoration: none;
@@ -196,8 +199,12 @@ span.noscript .button-label {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   background-color: #404040;
-  text-align: center;
+  text-align: right;
   font-weight: normal;
+  cursor: pointer;
+}
+#app #projects .category-toggle img {
+  height: 2vw;
 }
 #app #projects .category-toggle[active=true] {
   color: darkslategrey;
@@ -217,6 +224,57 @@ span.noscript .button-label {
   top: 5vh;
   margin-bottom: 5vh;
   background-size: cover;
+}
+#app #info {
+  position: relative;
+  display: block;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-base-color: darkslategrey;
+  color: black;
+}
+#app #info .project-slideshow, #app #info h4 {
+  position: relative;
+  margin-left: 20vw;
+  width: 60vw;
+  height: 45vw;
+}
+#app #info h2, #app #info h5, #app #info h4 {
+  height: auto;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1;
+}
+#app #info h2 img, #app #info h5 img, #app #info h4 img {
+  height: 1em;
+}
+#app #info h5 {
+  font-size: 1.2em;
+  line-height: 1;
+}
+#app #info h4 {
+  font-size: 1.6em;
+}
+#app #info .proj-button-container {
+  text-align: center;
+}
+#app #info #proj-source, #app #info #proj-view {
+  position: relative;
+  display: inline-block;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  width: 25vw;
+  line-height: 7vw;
+}
+#app #info #proj-source {
+  background-image: url("../media/github.png");
+}
+#app #info #proj-view {
+  background-image: url("../media/websites-icon.png");
 }
 
 .slide-enter-active, .slide-leave-active {

@@ -67,6 +67,7 @@ body {
   background-color: $highlight-color;
   transform: translateY(0%);
   transition: 0.5s transform ease;
+  cursor: pointer;
 }
 
 a.button {
@@ -83,6 +84,7 @@ a.button {
   font-size: 3.5vw;
   font-weight: bold;
   text-shadow: 1px 1px 10px black;
+  cursor: pointer;
 }
 
 
