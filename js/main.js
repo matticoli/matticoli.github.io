@@ -29,6 +29,11 @@ let slidein = () => {
 
 
 $(document).ready(function () {
+    // Scroll down to show footer on an`droid
+    setTimeout( () => {
+        window.scrollTo(0,1)
+    }, 200);
+
     $('.page').fadeOut(0);
     slideout();
     setTimeout(() => {

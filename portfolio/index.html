@@ -57,8 +57,9 @@
             <h2>
                 MATTICOLI
                 <h5 v-bind:title="showProjects ? 'Back' : 'Back to landing page'"
-                    class="backlink">
-                    <a v-bind:href="showProjects ? './' : '../'">
+                    class="backlink"
+                    v-on:click="onBackClick">
+                    <div>
                         <img alt="Back Arrow" src="../media/back-arrow.png">
                         &nbsp;
                         <template v-if="!showProjects">
@@ -68,14 +69,14 @@
                             &nbsp;
                             <img alt="Resume Icon" src="../media/resume.png">
                         </template>
-                    </a>
+                    </div>
                 </h5>
             </h2>
         </div>
 
         <transition name="slide">
             <!-- Render project list if category selected -->
-            <div id="projects" v-if="showProjects">
+            <div id="projects" v-if="showProjects && !selectedProject">
                 <div>
                     <template v-for="category in Object.keys(selectedCategories)">
                         <div class="category-toggle"
@@ -83,19 +84,20 @@
                              v-bind:active="selectedCategories[category]"
                              v-on:click="handleCategoryChange">
                             {{ category }}
+                            <img v-bind:src="'../media/' + categoryAssets[category] + '-icon.png'"/>
                         </div>
                     </template>
                 </div>
                 <template v-for="proj in projects">
                     <transition name="slide">
-                        <a class="box button project-tile"
-                           v-bind:href="proj.view"
+                        <div class="box button project-tile"
                              v-if="selectedCategories[proj.category]"
+                             v-on:click="(evt) => {showProjectInfoView(proj.id)}"
                              v-bind:id="'tile-'+proj.id"
                              v-bind:title="proj.name"
                              v-bind:style="'background-image: url(\'' + proj.cover + '\');'">
                             <div class="box button-label">{{ proj.name }}</div>
-                        </a>
+                        </div>
                     </transition>
                 </template>
 
@@ -104,7 +106,7 @@
         <transition name="slide">
             <!-- Render category tiles if none selected -->
             <div id="categories" v-if="!showProjects">
-                <!-- Tile Background Image by David OReilly -->
+                <!-- "All Projects" Tile Background Image: "Everything" by David OReilly -->
                 <!--suppress HtmlUnknownAttribute -->
                 <div id="cat-all" title="All Projects" class="box button" v-on:click="showAllCategories">
                     <div class="box button-label">All Projects</div>
@@ -120,6 +122,43 @@
                 </div>
                 <div id="cat-bots" title="Bots & Stuff" class="box button" v-on:click="showCategory">
                     <div class="box button-label">Bots & Stuff</div>
+                </div>
+            </div>
+        </transition>
+        <transition name="slide">
+            <!-- Render category tiles if none selected -->
+            <div id="info" v-if="selectedProject">
+                <h2>
+                    <img v-bind:src="'../media/' + categoryAssets[selectedProject.category] + '-icon.png'"/>
+                    {{selectedProject.name.toUpperCase()}}
+                    <img v-bind:src="'../media/' + categoryAssets[selectedProject.category] + '-icon.png'"/>
+                <!--<h5>-->
+                    <!--{{selectedProject.category}}-->
+                    <!--<img v-bind:src="'../media/' + selectedProject.category + '-icon.png'"/>-->
+                <!--</h5>-->
+                </h2>
+                <h4>{{selectedProject.tagline}}</h4>
+                <iframe v-if="selectedProject.slideshow"
+                        v-bind:src="selectedProject.slideshow"
+                        frameborder="0"
+                        class="project-slideshow"
+                        allowfullscreen="true"
+                        mozallowfullscreen="true"
+                        webkitallowfullscreen="true">
+                </iframe>
+                <div class="proj-button-container">
+                    <a id="proj-source" title="Source"
+                       class="box button"
+                       v-if="!!selectedProject.source"
+                       v-bind:href="selectedProject.source">
+                        <div class="box button-label">GitHub</div>
+                    </a>
+                    <a id="proj-view" title="View"
+                       class="box button"
+                       v-if="!!selectedProject.view"
+                       v-bind:href="selectedProject.view">
+                        <div class="box button-label">View</div>
+                    </a>
                 </div>
             </div>
         </transition>

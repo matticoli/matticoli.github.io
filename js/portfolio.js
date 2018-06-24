@@ -26,10 +26,28 @@ let app = new Vue({
             'Websites': false,
             'Bots & Stuff': false,
         },
+        categoryAssets: categoryAssets,
         showProjects: false,
+        selectedProject: false,
         projects: projects,
     },
     methods: {
+        showProjectInfoView: (projectId) => {
+            window.history.pushState("", "", "#"+projectId);
+            projects.forEach( (proj) => {
+                if(proj.id === projectId) {
+                    app.selectedProject = proj;
+                    return;
+                }
+            });
+        },
+        hideProjectInfoView: () => {
+            window.history.pushState("", "", "./#projects");
+            app.selectedProject = false;
+        },
+        getSelectedProject: () => {
+            return app.selectedProject;
+        },
         showProjectsView: () => {
             window.history.pushState("", "", "#projects");
             app.showProjects = true;
@@ -49,7 +67,6 @@ let app = new Vue({
                 app.showProjectsView();
             }
         },
-
         showAllCategories: (e) => {
             e.preventDefault();
 
@@ -75,6 +92,15 @@ let app = new Vue({
                 }
             }
             app.hideProjectsView();
-        }
+        },
+        onBackClick: (e) => {
+            if(app.selectedProject) {
+                app.hideProjectInfoView();
+            } else if(app.showProjects) {
+                app.hideProjectsView();
+            } else {
+                window.location.href = '../';
+            }
+        },
     }
 });
