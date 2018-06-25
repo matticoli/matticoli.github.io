@@ -14,7 +14,7 @@ const projects = [
         cover: '../media/portfolio.png',
         view: 'https://matticoli.github.io',
         source: 'https://github.com/matticoli/matticoli.github.io',
-        slideshow: undefined,//'https://docs.google.com/presentation/d/e/2PACX-1vTj5m5i1_07TIL6NiouTV8upIiQFXGyn68VDW5qN5RzHyFjCiY-HzCo03lo9g7kPqw4IWiPUnAvJq6h/embed?start=true&loop=true&delayms=3000',
+        slideshow: 'https://docs.google.com/presentation/d/e/2PACX-1vTj5m5i1_07TIL6NiouTV8upIiQFXGyn68VDW5qN5RzHyFjCiY-HzCo03lo9g7kPqw4IWiPUnAvJq6h/embed?start=true&loop=true&delayms=3000&slide=id.p',
     },
     {
         name: 'Dysphoria',
