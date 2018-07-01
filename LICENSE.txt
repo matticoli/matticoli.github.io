@@ -1,4 +1,4 @@
-Any copyrighted frameworks/plug-ins/code/content included as part of this project that were created by entities not listed below or otherwise specified as contributors to this project, and are the copyright of their original authors and thus subject to any applicable licenses.
+Any copyrighted frameworks/plug-ins/code/content included as part of this repository that were created by entities not listed below or otherwise specified as contributors to this project, are the copyright of their original authors and thus subject to any applicable licenses.
 
  Copyright 2018 Mikel Matticoli
 
