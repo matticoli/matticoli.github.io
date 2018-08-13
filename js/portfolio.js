@@ -55,6 +55,12 @@ let app = new Vue({
         hideProjectsView: () => {
             window.history.pushState("", "", "./");
             app.showProjects = false;
+            
+            let categories = Object.keys(app.selectedCategories);
+            for(let index in categories) {
+                console.log(categories[index]);
+                Vue.set(app.selectedCategories, categories[index], false);
+            }
         },
         showCategory: (e) => {
             console.log(e);
