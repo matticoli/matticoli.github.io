@@ -146,6 +146,8 @@
                         mozallowfullscreen="true"
                         webkitallowfullscreen="true">
                 </iframe>
+                <br>
+                <p v-if="selectedProject.description">{{selectedProject.description}}</p>
                 <div class="proj-button-container">
                     <a id="proj-source" title="Source"
                        class="box button"

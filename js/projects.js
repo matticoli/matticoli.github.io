@@ -32,7 +32,7 @@ const projects = [
         tagline: 'Browser-based games/toys built in a minimalist engine with a focus on good design',
         cover: 'https://drmgames.github.io/firefly/cover.png',
         view: 'https://drmgames.github.io',
-        sourse: 'https://github.com/drmgames/drmgames.github.io'
+        source: 'https://github.com/drmgames/drmgames.github.io'
     },
     {
         name: 'HCI Portfolio',

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #cbcbd1;
+  background-color: #000033;
   color: white;
   overflow: hidden;
   font-family: "Montserrat";
@@ -13,6 +13,7 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
+  /* box-shadow: 0px 0px 30px inset grey; */
 }
 
 .box {
@@ -21,9 +22,9 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 3px 3px 3px 0px darkslategrey;
+  box-shadow: 0px 0px 0px 0px darkslategrey;
   background-size: auto 60%;
-  background-color: #404040;
+  background-color: #404055;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -59,6 +60,10 @@ body {
   transform: translateY(0%);
   transition: 0.5s transform ease;
   cursor: pointer;
+  border-radius: 80px;
+  background-size: contain;
+  background-origin: content-box;
+  padding: 20px;
 }
 
 a.button {
@@ -68,14 +73,16 @@ a.button {
 .button-label {
   width: calc(100%);
   height: calc(100%);
-  line-height: 20vh;
+  line-height: 25vh;
   color: white;
-  background-color: rgba(80, 80, 80, 0.2);
+  background-color: rgba(80, 80, 80, 0.5);
   opacity: 1;
   font-size: 3.5vw;
   font-weight: bold;
   text-shadow: 1px 1px 10px black;
   cursor: pointer;
+  border-radius: 80px;
+  margin: -20px;
 }
 
 input[type=checkbox] {
@@ -84,7 +91,7 @@ input[type=checkbox] {
 
 .button-top {
   width: 20vw;
-  top: 25%;
+  top: 20%;
 }
 
 .button-bottom {
