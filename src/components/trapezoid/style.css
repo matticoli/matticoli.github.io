@@ -1,0 +1,131 @@
+.hex {
+    display: block;
+    position: relative;
+    top: -21px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -11;
+}
+
+.rect {
+    padding: 0;
+    position: relative;
+    width: calc(100%-120px);
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #000;
+    z-index: -10;
+    border-bottom: 20px solid transparent;
+}
+
+.rect:hover {
+    font-size: 18px;
+}
+
+.leftTri {
+    position: relative;
+    top: 40px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border-top: 20px solid #000;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    z-index: -11;
+}
+
+.rightTri {
+    position: relative;
+    top: -20px;
+    margin-left: auto;
+    margin-right: 0px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border-top: 20px solid #000;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    z-index: -11;
+}
+
+
+.contents {
+    font-weight: bold;
+    position: relative;
+    bottom: 3px;
+    text-align: center;
+}
+
+.blueTri {
+    border-top: 20px solid#2C7BD4
+}
+
+@media (min-width:1025px) { 
+    .hex {
+        display: block;
+        position: relative;
+        top: -61px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: -11;
+    }
+    
+    .rect {
+        padding: 0;
+        position: relative;
+        width: calc(100%-120px);
+        height: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background: #000;
+        z-index: -10;
+        font-size: 22px;
+    }
+
+    .rect:hover {
+        font-size: 28px;
+    }
+    
+    .leftTri {
+        position: relative;
+        top: 80px;
+        left: 0px;
+        width: 40px;
+        height: 60px;
+        padding: 0;
+        border-top: 40px solid #000;
+        border-bottom: 40px solid transparent;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        z-index: -11;
+    }
+    
+    .rightTri {
+        position: relative;
+        top: -40px;
+        margin-left: auto;
+        margin-right: 0px;
+        width: 40px;
+        height: 60px;
+        padding: 0;
+        border-top: 40px solid #000;
+        border-bottom: 40px solid transparent;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        z-index: -11;
+    }
+    
+    .blueTri {
+        border-top: 40px solid#2C7BD4
+    }
+} 
+
+.blueRect {
+    background: #2C7BD4
+}

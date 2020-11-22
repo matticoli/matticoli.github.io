@@ -1,0 +1,23 @@
+.home {
+	padding: 56px 0px;
+	min-height: 100%;
+	width: 100%;
+}
+
+.tagline {
+	background-color: #000;
+	border-top: 1px solid #2C7BD4;
+	border-bottom: 1px solid #2C7BD4;
+	display: flex;
+	justify-content: center;
+	margin-top: 120px;
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+}
+
+.tagline img,h3 {
+	font-size: 25px;
+	line-height: 25px;
+	display: inline-block;
+}

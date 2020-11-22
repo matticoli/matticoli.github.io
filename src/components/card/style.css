@@ -1,0 +1,58 @@
+.wrapper {
+	flex: auto;
+	min-width: 247px;
+}
+
+.card {
+	display: block;
+	width: 309px;
+	max-width: 100%;
+	min-height: 480px;
+	max-height: 550px;
+	padding-bottom: 5px;
+	background-color: #262626;
+	color: white;
+	margin: 15px 15px 15px 15px;
+	margin-left: auto;
+	margin-right: auto;
+	/* border-radius: 5px; */
+	border: 1px solid #2C7BD4;
+}
+
+.card img {
+	width: 100%;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 1px solid #2C7BD4;
+}
+
+.card p {
+	padding: 10px;
+	padding-top: 0;
+	font-size: 16px;
+}
+
+.card ul {
+	width: 100%;
+	color: #2C7BD4;
+	font-size: 14px;
+	text-align: right;
+	padding-right: 15px;
+	list-style-type: none;
+	font-weight: 450;
+}
+
+.card a button {
+	cursor: pointer;
+	height: 30px;
+	width: 95%;
+	text-align: center;
+	line-height: 20px;
+	font-weight: bold;
+	font-size: 16px;
+	margin-left: 2.5%;
+	margin-bottom: 2%;
+	background: #2C7BD4;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}

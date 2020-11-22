@@ -1,0 +1,15 @@
+.deck {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	margin-right: 8px;
+}
+
+
+@media (max-width:1025px) { 
+	.deck {
+		padding: 0px 30px;
+
+	}
+}

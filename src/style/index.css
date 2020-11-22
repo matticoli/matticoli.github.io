@@ -1,0 +1,23 @@
+html, body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #123456;
+	font-family: 'Mukta', 'Helvetica Neue', 'Helvetica', arial, sans-serif;
+	font-weight: 400;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	/* background-image: url('/assets/site-background.png'); */
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#app {
+	height: 100%;
+}
