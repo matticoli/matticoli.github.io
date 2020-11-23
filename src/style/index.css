@@ -11,13 +11,51 @@ html, body {
 }
 
 body {
-	/* background-image: url('/assets/site-background.png'); */
+	min-height: 100vh;
+	height: 100%;
 }
 
 * {
 	box-sizing: border-box;
 }
 
-#app {
+#root {
+	min-height: 100vh;
 	height: 100%;
+}
+
+#app {
+	min-height: 100vh;
+	height: 100%;
+}
+
+.contactForm {
+	position: relative;
+	top: 200px;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: black;
+	font-size: 18px;
+	border-top: 1px solid #2C7BD4;
+	border-bottom: 1px solid #2C7BD4;
+}
+
+.contactForm input, textarea, button {
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+	margin-bottom: 15px;
+	width: 200px;
+	max-width: 90%;
+}
+
+.contactForm h3 {
+	color:  #2C7BD4;
+	margin-top: 0px;
+	font-style: italic;
+}
+.contactForm h1 {
+	margin-bottom: 0px;
 }
