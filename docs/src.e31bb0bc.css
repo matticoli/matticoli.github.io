@@ -212,7 +212,7 @@ body {
 
 .header h1 {
 	position: relative;
-	width: 220px;
+	width: 270px;
 	display: block;
 	margin: 0;
 	margin-top: 15px;
@@ -374,6 +374,7 @@ body {
 .wrapper {
 	flex: auto;
 	min-width: 247px;
+	justify-content: space-around;
 }
 
 .card {

@@ -1,6 +1,7 @@
 .wrapper {
 	flex: auto;
 	min-width: 247px;
+	justify-content: space-around;
 }
 
 .card {
