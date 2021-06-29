@@ -34262,6 +34262,16 @@ module.exports = "/call-of-karen-cover.4ac3ce77.png";
 module.exports = "/portfolio-cover.97390ee6.png";
 },{}],"assets/jhdb-cover.png":[function(require,module,exports) {
 module.exports = "/jhdb-cover.e4653007.png";
+},{}],"assets/bvg-cover.png":[function(require,module,exports) {
+module.exports = "/bvg-cover.4514f257.png";
+},{}],"assets/mirrors-cover.png":[function(require,module,exports) {
+module.exports = "/mirrors-cover.df9e4149.png";
+},{}],"assets/academic-cover.png":[function(require,module,exports) {
+module.exports = "/academic-cover.b8ef50f4.png";
+},{}],"assets/treasury-cover.png":[function(require,module,exports) {
+module.exports = "/treasury-cover.574c0330.png";
+},{}],"assets/inprogress-cover.png":[function(require,module,exports) {
+module.exports = "/inprogress-cover.5dfce5e3.png";
 },{}],"routes/home/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -34284,6 +34294,16 @@ var _portfolioCover = _interopRequireDefault(require("../../assets/portfolio-cov
 
 var _jhdbCover = _interopRequireDefault(require("../../assets/jhdb-cover.png"));
 
+var _bvgCover = _interopRequireDefault(require("../../assets/bvg-cover.png"));
+
+var _mirrorsCover = _interopRequireDefault(require("../../assets/mirrors-cover.png"));
+
+var _academicCover = _interopRequireDefault(require("../../assets/academic-cover.png"));
+
+var _treasuryCover = _interopRequireDefault(require("../../assets/treasury-cover.png"));
+
+var _inprogressCover = _interopRequireDefault(require("../../assets/inprogress-cover.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
@@ -34302,30 +34322,28 @@ var Home = function Home() {
     image: _jhdbCover.default,
     action: "https://global.jazzhistorydatabase.com"
   }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("p", null, "The Contributor Portal empowers jazz musicians, archivists and educators from all around the world to effortlessly contribute to the JHDB's online museum without technical barriers"), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, "Lead Developer/Designer"), /*#__PURE__*/_react.default.createElement("li", null, "SRE/Systems Engineer"), /*#__PURE__*/_react.default.createElement("li", null, "Instructional/Customer Support"))), /*#__PURE__*/_react.default.createElement(_card.default, {
-    image: _portfolioCover.default
-  }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("p", null, "Built from scratch using React and plain CSS, this website was a fun exercise in designing something a bit more unique. I'll admit I spent a little too long making responsive hexagons in pure CSS..."), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, "Web Design"), /*#__PURE__*/_react.default.createElement("li", null, "ReactJS + Parcel"), /*#__PURE__*/_react.default.createElement("li", null, "CSS Triangles")))), /*#__PURE__*/_react.default.createElement("div", {
+    image: _bvgCover.default,
+    action: "https://buriedvoices.github.io"
+  }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("p", null, "Buried voices is a 3D puzzle-platformer game for PC that explores the issues of historical revisionism and cultural erasure through the lens of Khura's journey to discover the truth about her heritage"), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, "Unity 3D (C#)"), /*#__PURE__*/_react.default.createElement("li", null, "Tech Art (Tools/Implementation)"), /*#__PURE__*/_react.default.createElement("li", null, "Web Design/Marketing")))), /*#__PURE__*/_react.default.createElement("div", {
     className: "tagline"
   }, /*#__PURE__*/_react.default.createElement("h1", null, "Miscellaneous")), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_deck.default, null, /*#__PURE__*/_react.default.createElement(_card.default, {
-    image: null,
+    image: _mirrorsCover.default,
     action: "https://drmgames.github.io/mirrors/game.html"
-  }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h3", null, "Mirrors"), /*#__PURE__*/_react.default.createElement("p", null, "Mirrors is a puzzle game built in Perlenspiel, a minimalist web-based game engine")), /*#__PURE__*/_react.default.createElement(_card.default, {
-    image: null,
-    action: "https://digitalcommons.wpi.edu/do/search/?q=Mikel Matticoli&start=0"
+  }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h3", null, "Mirrors"), /*#__PURE__*/_react.default.createElement("p", null, "Mirrors is a 2D puzzle game built in Perlenspiel, a minimalist web-based game engine")), /*#__PURE__*/_react.default.createElement(_card.default, {
+    image: _academicCover.default,
+    action: "https://digital.wpi.edu/catalog?utf8=%E2%9C%93&search_field=all_fields&q=Mikel+Matticoli"
   }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h3", null, "Academic Work"), /*#__PURE__*/_react.default.createElement("p", null, "Published papers on The Call of Karen, the JHDB Global Contributor Projec, and contributions to other academic work at WPI")), /*#__PURE__*/_react.default.createElement(_card.default, {
-    image: null,
+    image: _treasuryCover.default,
+    action: "https://treasury.wpi.edu"
+  }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h3", null, "WPI Treasury"), /*#__PURE__*/_react.default.createElement("p", null, "A web application to promote financial transparency in WPI's student government by making financial data available to the WPI community")), /*#__PURE__*/_react.default.createElement(_card.default, {
+    image: _inprogressCover.default,
     action: "https://github.com/matticoli/paracord"
-  }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h3", null, "In Progress: Paracord"), /*#__PURE__*/_react.default.createElement("p", null, "A collaborative tool for building visual novels. The simplicity of Twine with the portability of Google Docs")), /*#__PURE__*/_react.default.createElement(_card.default, {
-    image: null,
-    action: "https://github.com/buriedvoices"
-  }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h3", null, "In Progress: Buried Voices"), /*#__PURE__*/_react.default.createElement("p", null, "Buried Voices is a narrative-driven exploration game where you must investigate an ancient library overtaken by invaders to discover the erased history about its previous inhabitants.")), /*#__PURE__*/_react.default.createElement(_card.default, {
-    image: null,
-    action: "https://github.com/WPI-SGA-Financials/treasury-web"
-  }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h3", null, "In Progress: WPI Treasury"), /*#__PURE__*/_react.default.createElement("p", null, "A web application to promote financial transparency in WPI's student government by making financial data available to the WPI community"))));
+  }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h3", null, "In Progress: Paracord"), /*#__PURE__*/_react.default.createElement("p", null, "A collaborative tool for building visual novels. The simplicity of Twine with the portability of Google Docs"))));
 };
 
 var _default = Home;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./style":"routes/home/style.css","../../components/deck":"components/deck/index.js","../../components/card":"components/card/index.js","../../assets/call-of-karen-cover.png":"assets/call-of-karen-cover.png","../../assets/portfolio-cover.png":"assets/portfolio-cover.png","../../assets/jhdb-cover.png":"assets/jhdb-cover.png"}],"routes/about/style.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./style":"routes/home/style.css","../../components/deck":"components/deck/index.js","../../components/card":"components/card/index.js","../../assets/call-of-karen-cover.png":"assets/call-of-karen-cover.png","../../assets/portfolio-cover.png":"assets/portfolio-cover.png","../../assets/jhdb-cover.png":"assets/jhdb-cover.png","../../assets/bvg-cover.png":"assets/bvg-cover.png","../../assets/mirrors-cover.png":"assets/mirrors-cover.png","../../assets/academic-cover.png":"assets/academic-cover.png","../../assets/treasury-cover.png":"assets/treasury-cover.png","../../assets/inprogress-cover.png":"assets/inprogress-cover.png"}],"routes/about/style.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -34589,7 +34607,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52905" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58856" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
