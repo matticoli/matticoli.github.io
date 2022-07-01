@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Programmer &#8211; Mikel Matticoli</title>
+	<atom:link href="/tag/programmer/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Engineer &#124; Producer &#124; Designer</description>
+	<lastBuildDate>Fri, 01 Jul 2022 05:52:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>Mirror</title>
+		<link>/mirror</link>
+		
+		<dc:creator><![CDATA[Mikel]]></dc:creator>
+		<pubDate>Fri, 01 Jul 2022 05:51:35 +0000</pubDate>
+				<category><![CDATA[Games]]></category>
+		<category><![CDATA[Designer]]></category>
+		<category><![CDATA[Programmer]]></category>
+		<guid isPermaLink="false">/?p=1287</guid>
+
+					<description><![CDATA[Mirror is a 2D puzzle game built in Perlenspiel, a minimalist web-based game engine.]]></description>
+										<content:encoded><![CDATA[<div class="post-content">
+<p>Mirror is a 2D puzzle game built in Perlenspiel, a minimalist web-based game engine.</p>
+
+
+
+<div class="wp-container-1 wp-block-buttons">
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="https://drmgames.github.io/mirrors/game.html" style="border-radius:0px" target="_blank" rel="noreferrer noopener">Project Website</a></div>
+</div>
+
+
+
+<p><em>Additional details/content coming soon. In the meantime, feel free to see the project website above or check out <a href="/projects" target="_blank" rel="noreferrer noopener">some of my other projects</a>!</em></p>
+
+
+
+<p></p>
+</div>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Buried Voices</title>
+		<link>/buried-voices</link>
+		
+		<dc:creator><![CDATA[Mikel]]></dc:creator>
+		<pubDate>Thu, 01 Jul 2021 05:47:25 +0000</pubDate>
+				<category><![CDATA[Games]]></category>
+		<category><![CDATA[Designer]]></category>
+		<category><![CDATA[Programmer]]></category>
+		<guid isPermaLink="false">/?p=1282</guid>
+
+					<description><![CDATA[Buried voices is a 3D puzzle-platformer game for PC that explores the issues of historical revisionism and cultural erasure through the lens of Khura's journey to discover the truth about her heritage.]]></description>
+										<content:encoded><![CDATA[<div class="post-content">
+<p>Buried voices is a 3D puzzle-platformer game for PC that explores the issues of historical revisionism and cultural erasure through the lens of Khura&#8217;s journey to discover the truth about her heritage.</p>
+
+
+
+<div class="wp-container-2 wp-block-buttons">
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="https://buriedvoices.github.io/" style="border-radius:0px" target="_blank" rel="noreferrer noopener">Project Website</a></div>
+</div>
+
+
+
+<p><em>Additional details/content coming soon. In the meantime, feel free to see the project website above or check out <a href="/projects" target="_blank" rel="noreferrer noopener">some of my other projects</a>!</em></p>
+
+
+
+<p></p>
+</div>]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

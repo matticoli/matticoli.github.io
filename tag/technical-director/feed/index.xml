@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Technical Director &#8211; Mikel Matticoli</title>
+	<atom:link href="/tag/technical-director/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Engineer &#124; Producer &#124; Designer</description>
+	<lastBuildDate>Fri, 01 Jul 2022 05:46:43 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>Holiday Escape</title>
+		<link>/holiday-escape</link>
+		
+		<dc:creator><![CDATA[Mikel]]></dc:creator>
+		<pubDate>Mon, 27 Dec 2021 04:53:28 +0000</pubDate>
+				<category><![CDATA[Experiences]]></category>
+		<category><![CDATA[Producer]]></category>
+		<category><![CDATA[Technical Director]]></category>
+		<guid isPermaLink="false">/?p=759</guid>
+
+					<description><![CDATA[I led a team of 16 in all aspects of design, construction, and execution of a week-long escape room installation. Holiday Escape was the 2021 installment of the annual escape room, hosted by WPI's Interactive Media department.]]></description>
+										<content:encoded><![CDATA[<div class="post-content">
+<p>I led a team of 16 in all aspects of design, construction, and execution of a week-long escape room installation. Holiday Escape was the 2021 installment of the annual escape room, hosted by Worcester Polytechnic Institute&#8217;s Interactive Media program.</p>
+
+
+
+<div class="wp-container-1 wp-block-buttons">
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="https://escaperoom.wpi.edu/" style="border-radius:0px" target="_blank" rel="noreferrer noopener">Project Website</a></div>
+</div>
+
+
+
+<p><em>Additional details/content coming soon. In the meantime, feel free to see the project website above or check out <a href="/projects" target="_blank" rel="noreferrer noopener">some of my other projects</a>!</em></p>
+
+
+
+<p></p>
+</div>]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
