@@ -8,17 +8,17 @@
 	>
 
 <channel>
-	<title>Technical Director &#8211; Mikel Matticoli</title>
+	<title>Technical Director Archives - Mikel Matticoli</title>
 	<atom:link href="/tag/technical-director/feed" rel="self" type="application/rss+xml" />
-	<link>/</link>
-	<description>Engineer &#124; Producer &#124; Designer</description>
+	<link>/tag/technical-director</link>
+	<description>Engineer  ᐧ  Producer  ᐧ  Designer</description>
 	<lastBuildDate>Fri, 01 Jul 2022 05:46:43 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0</generator>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
 	<item>
 		<title>Holiday Escape</title>
 		<link>/holiday-escape</link>
@@ -30,13 +30,15 @@
 		<category><![CDATA[Technical Director]]></category>
 		<guid isPermaLink="false">/?p=759</guid>
 
-					<description><![CDATA[I led a team of 16 in all aspects of design, construction, and execution of a week-long escape room installation. Holiday Escape was the 2021 installment of the annual escape room, hosted by WPI's Interactive Media department.]]></description>
+					<description><![CDATA[<p>I led a team of 16 in all aspects of design, construction, and execution of a week-long escape room installation. Holiday Escape was the 2021 installment of the annual escape room, hosted by WPI's Interactive Media department.</p>
+<p>The post <a rel="nofollow" href="/holiday-escape">Holiday Escape</a> appeared first on <a rel="nofollow" href="/">Mikel Matticoli</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[<div class="post-content">
 <p>I led a team of 16 in all aspects of design, construction, and execution of a week-long escape room installation. Holiday Escape was the 2021 installment of the annual escape room, hosted by Worcester Polytechnic Institute&#8217;s Interactive Media program.</p>
 
 
 
-<div class="wp-container-1 wp-block-buttons">
+<div class="is-content-justification-center is-layout-flex wp-container-1 wp-block-buttons">
 <div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="https://escaperoom.wpi.edu/" style="border-radius:0px" target="_blank" rel="noreferrer noopener">Project Website</a></div>
 </div>
 
@@ -47,7 +49,8 @@
 
 
 <p></p>
-</div>]]></content:encoded>
+</div><p>The post <a rel="nofollow" href="/holiday-escape">Holiday Escape</a> appeared first on <a rel="nofollow" href="/">Mikel Matticoli</a>.</p>
+]]></content:encoded>
 					
 		
 		
