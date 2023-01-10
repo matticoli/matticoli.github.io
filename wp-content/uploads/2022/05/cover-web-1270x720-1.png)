@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<title>Redirecting...</title>
-		<meta http-equiv="refresh" content="0;url=/wp-content/uploads/2022/05/cover-web-1270x720-1.png">
+		<meta http-equiv="refresh" content="0;url=/wp-content/uploads/2022/05/cover-web-1270x720-1.png?simply_static_page=3341">
 	</head>
 	<body>
 		<script type="text/javascript">
-			window.location = "/wp-content/uploads/2022/05/cover-web-1270x720-1.png";
+			window.location = "/wp-content/uploads/2022/05/cover-web-1270x720-1.png?simply_static_page=3341";
 		</script>
 
-		<p>You are being redirected to <a href="/wp-content/uploads/2022/05/cover-web-1270x720-1.png">/wp-content/uploads/2022/05/cover-web-1270x720-1.png</a></p>
+		<p>You are being redirected to <a href="/wp-content/uploads/2022/05/cover-web-1270x720-1.png?simply_static_page=3341">/wp-content/uploads/2022/05/cover-web-1270x720-1.png?simply_static_page=3341</a></p>
 	</body>
 </html>

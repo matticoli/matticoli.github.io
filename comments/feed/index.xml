@@ -8,10 +8,10 @@
 <channel>
 	<title>
 	Comments for Mikel Matticoli	</title>
-	<atom:link href="/comments/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="/comments/feed?simply_static_page=3207" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>Engineer  ᐧ  Producer  ᐧ  Designer</description>
-	<lastBuildDate>Sat, 19 Nov 2022 23:11:57 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 10 Jan 2023 06:30:22 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>

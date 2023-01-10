@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<title>Redirecting...</title>
-		<meta http-equiv="refresh" content="0;url=/wp-content/uploads/2021/12/maxresdefault.webp">
+		<meta http-equiv="refresh" content="0;url=/wp-content/uploads/2021/12/maxresdefault.webp?simply_static_page=3338">
 	</head>
 	<body>
 		<script type="text/javascript">
-			window.location = "/wp-content/uploads/2021/12/maxresdefault.webp";
+			window.location = "/wp-content/uploads/2021/12/maxresdefault.webp?simply_static_page=3338";
 		</script>
 
-		<p>You are being redirected to <a href="/wp-content/uploads/2021/12/maxresdefault.webp">/wp-content/uploads/2021/12/maxresdefault.webp</a></p>
+		<p>You are being redirected to <a href="/wp-content/uploads/2021/12/maxresdefault.webp?simply_static_page=3338">/wp-content/uploads/2021/12/maxresdefault.webp?simply_static_page=3338</a></p>
 	</body>
 </html>
