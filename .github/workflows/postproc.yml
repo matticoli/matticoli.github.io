@@ -1,4 +1,4 @@
-name: Postproc
+name: Postprocess
 on: [push, pull_request]
 jobs:
   build:
