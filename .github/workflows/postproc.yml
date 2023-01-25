@@ -20,7 +20,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git commit -a -m "Autofix links from WP static generation"
       - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@master
         with:
           branch: ${{ github.ref }}
           ssh: true
