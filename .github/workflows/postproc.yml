@@ -11,7 +11,7 @@ jobs:
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@v2
         with:
-          find: "wp.mikel.tech"
+          find: "matticoli.net"
           replace: "matticoli.net"
           regex: false
       - name: Commit files
