@@ -9,7 +9,7 @@
 
 <channel>
 	<title>Community Management Archives - Mikel Matticoli</title>
-	<atom:link href="/tag/community-management/feed?simply_static_page=3818" rel="self" type="application/rss+xml" />
+	<atom:link href="/tag/community-management/feed" rel="self" type="application/rss+xml" />
 	<link>/tag/community-management</link>
 	<description>Engineer  ᐧ  Designer  ᐧ  Producer</description>
 	<lastBuildDate>Fri, 13 Jan 2023 05:23:02 +0000</lastBuildDate>
@@ -51,7 +51,7 @@
 				<div class="elementor-element elementor-element-1f96800 animated-slow elementor-widget elementor-widget-image" data-id="1f96800" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.10.1 - 17-01-2023 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img decoding="async" width="640" height="402" src="/wp-content/uploads/2022/05/call-of-karen-cover@2x-768x482.png" class="attachment-medium_large size-medium_large wp-image-822" alt="" loading="lazy" srcset="/wp-content/uploads/2022/05/call-of-karen-cover@2x-768x482.png 768w, /wp-content/uploads/2022/05/call-of-karen-cover@2x-300x188.png 300w, /wp-content/uploads/2022/05/call-of-karen-cover@2x.png 1000w" sizes="(max-width: 640px) 100vw, 640px" />															</div>
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img decoding="async" width="640" height="402" src="/wp-content/uploads/2022/05/call-of-karen-cover@2x-768x482.png" class="attachment-medium_large size-medium_large wp-image-822" alt="" srcset="/wp-content/uploads/2022/05/call-of-karen-cover@2x-768x482.png 768w, /wp-content/uploads/2022/05/call-of-karen-cover@2x-300x188.png 300w, /wp-content/uploads/2022/05/call-of-karen-cover@2x.png 1000w" sizes="(max-width: 640px) 100vw, 640px" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-63a3e521 elementor-widget elementor-widget-eael-feature-list" data-id="63a3e521" data-element_type="widget" data-widget_type="eael-feature-list.default">
 				<div class="elementor-widget-container">

@@ -9,7 +9,7 @@
 
 <channel>
 	<title>Technical Director Archives - Mikel Matticoli</title>
-	<atom:link href="/tag/technical-director/feed?simply_static_page=3806" rel="self" type="application/rss+xml" />
+	<atom:link href="/tag/technical-director/feed" rel="self" type="application/rss+xml" />
 	<link>/tag/technical-director</link>
 	<description>Engineer  ᐧ  Designer  ᐧ  Producer</description>
 	<lastBuildDate>Fri, 01 Jul 2022 05:46:43 +0000</lastBuildDate>
