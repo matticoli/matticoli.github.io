@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Lexend:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lexend+Giga:regular,bold,italic&subset=latin,latin-ext');
+
+.rounded-tl-4xl {
+    border-top-left-radius: 40px;;
+}
+
+.rounded-tr-4xl {
+    border-top-right-radius: 40px;;
+}
+.rounded-bl-4xl {
+    border-bottom-left-radius: 40px;;
+}
+
+.rounded-br-4xl {
+    border-bottom-right-radius: 40px;;
+}
+
+.rounded-tl-5xl {
+    border-top-left-radius: 50px;;
+}
+
+.rounded-tr-5xl {
+    border-top-right-radius: 50px;;
+}
+.rounded-bl-5xl {
+    border-bottom-left-radius: 50px;;
+}
+
+.rounded-br-5xl {
+    border-bottom-right-radius: 50px;;
+}
+
+.bg-primary {
+    background-color: #6189B9;
+}
+
+.text-primary {
+    color: #6189B9;
+}
+
+.decoration-primary {
+    text-decoration-color: #6189B9;
+}
