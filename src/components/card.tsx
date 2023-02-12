@@ -1,8 +1,8 @@
 import ReactTypingEffect from 'react-typing-effect';
 
-const shapeTop = " rounded-tr-md rounded-tl-4xl";
-const shapeBottom = " rounded-bl-md rounded-br-4xl";
-const shapeDefault = shapeTop + shapeBottom //" rounded-tr-3xl rounded-tl-md rounded-bl-3xl rounded-br-md";
+const shapeTop = (reverse?: boolean) => {return reverse ? " rounded-tl-md rounded-tr-4xl" : " rounded-tr-md rounded-tl-4xl"};
+const shapeBottom = (reverse?: boolean) => {return reverse ? " rounded-br-md rounded-bl-4xl" : " rounded-bl-md rounded-br-4xl"};
+const shapeDefault = (reverse?: boolean) => shapeTop(reverse) + shapeBottom(reverse)
 
 enum CardType {
     T = "T", // TOP
@@ -11,15 +11,16 @@ enum CardType {
     D = "D" // DEFAULT
 }
 
-interface InnerProps {
+interface CardProps {
     type?: CardType | string
     className?: string
+    reverse?: boolean
     children: any
 }
 
-export function CardOuter(props: any) {
+export function CardOuter(props: CardProps) {
     return <>
-        <div style={{backgroundColor: "#121212BB"}} className={"w-11/12 sm:w-10/12 lg:w-9/12 xl:w-8/12 mr-10 ml-10 mt-5 mb-5" + shapeDefault}>
+        <div style={{backgroundColor: "#121212BB"}} className={"backdrop-blur-sm w-11/12 sm:w-10/12 lg:w-9/12 mr-10 ml-10 mt-5 mb-5" + shapeDefault(props.reverse)}>
                 <div className="bg-transparent opacity-100">
                     {props.children}
                 </div>
@@ -27,12 +28,12 @@ export function CardOuter(props: any) {
     </>
 }
 
-export function CardInner(props: InnerProps) {
-    let shape: string = shapeDefault;
+export function CardInner(props: CardProps) {
+    let shape: string = shapeDefault(props.reverse);
     if(props.type === 'T') {
-        shape = shapeTop;
+        shape = shapeTop(props.reverse);
     } else if(props.type === 'B') {
-        shape = shapeBottom;
+        shape = shapeBottom(props.reverse);
     } else if (props.type === 'M') {
         shape = '';
     };

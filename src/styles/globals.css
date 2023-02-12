@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lexend:regular,bold,italic&subset=latin,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Lexend+Giga:regular,bold,italic&subset=latin,latin-ext');
 
+:root {
+    --primary: #6189B9;
+  }
+
 .rounded-tl-4xl {
     border-top-left-radius: 40px;;
 }
@@ -35,13 +39,92 @@
 }
 
 .bg-primary {
-    background-color: #6189B9;
+    background-color: var(--primary);
 }
 
 .text-primary {
-    color: #6189B9;
+    color: var(--primary);
+}
+
+.hover-text-primary:hover {
+    color: var(--primary);
+}
+
+p a:hover {
+    color: #2f5e97;
 }
 
 .decoration-primary {
-    text-decoration-color: #6189B9;
+    text-decoration-color: var(--primary);
 }
+
+@keyframes elec {
+    0% {
+        box-shadow: 0 0 5px 5px cyan, inset 0 0 5px 5px cyan;
+        background-position-y: 200px;
+    }
+    50% {
+        box-shadow: 0 0 0px 0px transparent, inset 0 0 3px 3px transparent;
+        background-position-y: 100px;
+        
+    }
+    100% {
+        box-shadow: 0 0 5px 5px cyan, inset 0 0 5px 5px cyan;
+        background-position-y: 0px 0px;
+    }
+  }
+
+@keyframes bulb {
+    0% {
+        filter: drop-shadow(1px 1px 4px var(#222));
+        box-shadow: 0 0 10px 10px  var(--primary), inset 0 0 30px 30px  var(--primary);
+        background: radial-gradient(circle, var(--primary) 0%, rgba(0, 0, 0, 0) 10%); 
+        background-size: 1000px;
+        background-position: -450px 0px;
+    }
+    50% {
+        filter: drop-shadow(0px 0px 0px var(#222));
+        box-shadow: 0 0 0px 0px transparent, inset 0 0 0px 0px transparent;
+        background: radial-gradient(circle, var(--primary) 0%, rgba(0, 0, 0, 0) 10%); 
+        background-size: 100px;
+        background-position: 0px 0px;
+        
+    }
+    100% {
+        filter: drop-shadow(1px 1px 4px var(#222));
+        box-shadow: 0 0 10px 10px  var(--primary), inset 0 0 30px 30px  var(--primary);
+        background: radial-gradient(circle, var(--primary) 0%, rgba(0, 0, 0, 0) 10%); 
+        background-size: 1000px;
+        background-position: -450px 0px;
+
+    }
+  }
+
+.elec {
+    position: absolute;
+    z-index: -1;
+    margin-top: -5px;
+    display: block;
+    width: 2px;
+    box-shadow: 0 0 6px 6px var(--primary);
+    background: repeating-linear-gradient(
+        135deg,
+        transparent 0px,
+        transparent 20px,
+        var(--primary) 22px,
+        var(--primary) 24px
+      );
+    background-blend-mode: luminosity;
+    filter: blur();
+    animation: elec ease-out 4s infinite;
+    background-size: 200px;
+  }
+
+  .bulb {
+    border: none;
+    border-radius: 100%;
+    padding: 4px;
+    animation: bulb ease-out 4s infinite;
+    background-repeat: no-repeat;
+    background-attachment: local;
+  }

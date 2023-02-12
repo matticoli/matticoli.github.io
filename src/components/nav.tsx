@@ -37,14 +37,14 @@ export default function Nav(props: any) {
         </>}
             <div className={(!props.sticky ? "hidden sm:flex " : "") + "flex justify-center text-center sm:justify-left sm:text-left text-xl pt-4 gap-10 sm:mr-4 "}>
                 <span className="flex-1 hidden sm:block" />
-                <a className={"w-20 hover:text-primary" + (routeDec())} href="/">
+                <a className={"w-20 hover-text-primary" + (routeDec())} href="/">
+                    Home
+                </a>
+                <a className={"w-20 hover-text-primary" + (routeDec('about'))} href="/about">
                     About
                 </a>
-                <a className={"w-20 hover:text-primary" + (routeDec('projects'))} href="/projects">
+                <a className={"w-20 hover-text-primary" + (routeDec('projects'))} href="/projects">
                     Projects
-                </a>
-                <a className={"w-20 hover:text-primary" + (routeDec('contacts'))} href="/contact">
-                    Contact
                 </a>
             </div>
         </div>

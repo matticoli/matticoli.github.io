@@ -6,11 +6,13 @@ import Nav from '../components/nav'
 import Hi from '../components/hi'
 import {CardOuter, CardInner } from '../components/card'
 import Button from '../components/button'
+import Elec from '../components/elec'
+import ContactPopup from '../components/contact-popup'
 
 const Home: NextPage = () => {
   return (
     <>
-      <div className="flex min-h-screen flex-col items-center justify-center bg-slate-900 text-white">
+      <div style={{fontFamily: 'Montserrat'}} className="flex min-h-screen flex-col items-center justify-center bg-slate-900 text-white">
         <Head>
           <title>Mikel Matticoli</title>
           <link rel="icon" href="/favicon.ico" />
@@ -19,17 +21,20 @@ const Home: NextPage = () => {
         <Nav sticky />
         <Fireflies />
         <main className="flex w-full z-10 flex-1 flex-col items-center justify-center text-center">
+          <div className="flex flex-row align-left justify-left">
+            <Elec className="flex-shrink mt-2 left-2" />
+            <span className="flex-grow w-11/12 sm:w-10/12 lg:w-9/12 xl:w-8/12" />
+          </div>
           <CardOuter>
             <CardInner type="T">
-              <Hi />
-              <div style={{fontFamily: 'Montserrat'}} className="mt-3 text-l sm:text-l text-left ml-5 mr-5 flex flex-col gap-4 mb-5">
+                <div className="flex flex-wrap align-center justify-center m-4">
+                  <Hi className="mt-4" />
+                  <img className="sm:w-6/12" src="/assets/111-coding.png" alt="A web illustration of a smiling coffy cup and a clipboard checklist next to a laptop" />
+                </div>
+              <div className="mt-3 text-l sm:text-l text-left ml-5 mr-5 flex flex-col gap-4 mb-5">
                 <p>
                   I’m a Software Engineer & Technical Designer with a passion for making things and helping others.
-                </p>
-                <p>
                   I have <a className="text-primary underline" href="/resume.pdf">8+ years of experience</a> in software engineering, project management, experience design, & IT.
-                </p>
-                <p>
                   These are some <a className="text-primary underline" href="/projects">cool things</a> I’ve made!
                 </p>
               </div>
@@ -40,16 +45,16 @@ const Home: NextPage = () => {
             </CardInner>
           </CardOuter>
 
+          <CardOuter reverse>
+            <CardInner reverse type="T">
+              <h2 className="text-2xl text-primary">Featured Projects</h2>
+            </CardInner>
           <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-            <a
-              href="https://nextjs.org/docs"
-              className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
+            <CardInner type="M"
+              className="mt-6 w-full text-left"
             >
-              <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-              <p className="mt-4 text-xl">
-                Find in-depth information about Next.js features and its API.
-              </p>
-            </a>
+              <h2>The Call of Karen is a </h2>
+            </CardInner>
 
             <a
               href="https://nextjs.org/learn"
@@ -83,18 +88,11 @@ const Home: NextPage = () => {
               </p>
             </a>
           </div>
+          </CardOuter>
         </main>
-
-        <footer className="flex h-24 w-full items-center justify-center border-t">
-          <a
-            className="flex items-center justify-center gap-2"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{' '}
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </a>
+        <ContactPopup />
+        <footer className="flex h-24 w-full items-center justify-center bg-black z-1 opacity-80">
+          <p>Made from scratch with <a href="">Next</a> and <a href="">Tailwind</a></p>
         </footer>
       </div>
     </>
