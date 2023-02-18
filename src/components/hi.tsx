@@ -6,7 +6,7 @@ export default function Hi({className}: any) {
             
             <h2 style={{fontFamily: 'Montserrat, Helvetica, sans-serif'}} className="text-2xl sm:text-3xl font-bold text-primary">
                     <ReactTypingEffect 
-                        staticText={'Hi, '}
+                        staticText={'👋 Hi!'}
                         text={"I'm Mikel"}
                         eraseDelay={30000}
                         cursor={'_'} />

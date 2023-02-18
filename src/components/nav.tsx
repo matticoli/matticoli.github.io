@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export default function Nav(props: any) {
     const router = useRouter();
@@ -16,7 +17,7 @@ export default function Nav(props: any) {
         <div style={{'minHeight': 80, fontFamily: 'Montserrat, Helvetica, sans-serif', overflow: 'initial'}} 
              className={(props.sticky ? "sticky sm:hidden " : "") + "sm:sticky top-0 z-20 w-full flex flex-col sm:flex-row backdrop-blur-sm border-[#121212] border-b-[1px] bg-black/80 p-4 sm:pl-20 sm:pr-20 text-center "}>
         {!props.sticky && <>
-            <a href="/" className="flex flex-row flex-1 justify-center text-left justify-left">
+            <Link href="/" className="flex flex-row flex-1 justify-center text-left justify-left">
                 <img src={'/assets/logo.png'}  
                     style={{maxHeight: 70, maxWidth: 70}}
                     className="flex-none hidden sm:block"
@@ -29,7 +30,7 @@ export default function Nav(props: any) {
                         {'Engineer  •  Technical Designer'}
                     </h3>
                 </div>
-            </a>
+            </Link>
             <img src={'/assets/logo.png'}  
                     style={{maxHeight: 30, maxWidth: 30}}
                     className="mt-3 ml-auto mr-auto flex-none sm:hidden"
@@ -37,15 +38,15 @@ export default function Nav(props: any) {
         </>}
             <div className={(!props.sticky ? "hidden sm:flex " : "") + "flex justify-center text-center sm:justify-left sm:text-left text-xl pt-4 gap-10 sm:mr-4 "}>
                 <span className="flex-1 hidden sm:block" />
-                <a className={"w-20 hover-text-primary" + (routeDec())} href="/">
+                <Link className={"w-20 hover-text-primary" + (routeDec())} href="/">
                     Home
-                </a>
-                <a className={"w-20 hover-text-primary" + (routeDec('about'))} href="/about">
+                </Link>
+                <Link className={"w-20 hover-text-primary" + (routeDec('about'))} href="/about">
                     About
-                </a>
-                <a className={"w-20 hover-text-primary" + (routeDec('projects'))} href="/projects">
+                </Link>
+                <Link className={"w-20 hover-text-primary" + (routeDec('projects'))} href="/projects">
                     Projects
-                </a>
+                </Link>
             </div>
         </div>
     </>

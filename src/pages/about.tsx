@@ -1,40 +1,32 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Fireflies from '../components/fireflies'
+import PageContainer from '../components/page-container'
+import { CardInner, CardOuter } from '../components/card'
+import { FaQuestionCircle } from "react-icons/fa";
 
 const About: NextPage = () => {
-  return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-slate-900 text-white">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Fireflies />
-      <main className="flex z-10 w-full flex-1 flex-col items-center justify-center text-center">
-        <div className="flex flex-1 flex-col items-left justify-left text-left p-4 w-full bg-zinc-900 h-20">
-        <h1 className="text-4xl font-bold">
-          <a className="text-white-200" href="https://nextjs.org">
-            Mikel Matticoli
-          </a>
-        </h1>
-        </div>
-
-      </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
-    </div>
-  )
+  return <>
+    <PageContainer title="About">
+      <span className="h-20" />
+      <CardOuter>
+        <CardInner>
+          <div className="flex flex-col sm:flex-row sm:gap-10 p-4 mt-[-100px] justify-center items-center sm:gap-0">
+            <img  src="/assets/profile.png" 
+                  className="w-40 h-40 max-w-40 max-h-40 ml-auto mr-auto rounded-full bg-white border-2 border-white"
+                  title="It's me!"
+                  alt="A dark-haired man wearing rectangular glasses, a frog t-shirt, and black jacket+beanie" />
+            <div className="w-full mr-auto ml-auto sm:mt-20 flex flex-col gap-0 text-left p-5">
+              <h3 className="text-primary text-2xl sm:text-4xl">Mikel Matticoli</h3>
+              <h3 className="flex flex-row gap-2 w-full text-primary text-lg sm:text-2xl"><span>he/they</span> <a className="mt-auto mb-auto text-sm sm:text-md" href="https://en.wikipedia.org/wiki/Preferred_gender_pronoun" target="_blank"><FaQuestionCircle /></a></h3>
+            </div>
+          </div>
+          <div className="text-left">
+            <p className="text-md p-5">I am an engineer, designer, and producer with a passion for making things and helping others.</p>
+            <p className="text-md p-5">I enjoy making things of all kinds – from websites, software, and robots, to crafts and foods. I find joy in things created by others too – particularly food, games, and stories, especially when they provide shared experiences with friends or family.</p>
+          </div>
+        </CardInner>
+      </CardOuter>
+    </PageContainer>
+  </>
 }
 
 export default About
