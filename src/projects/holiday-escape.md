@@ -1,7 +1,7 @@
 ---
 title: Holiday Escape
 slug: holiday-escape
-cover: assets/holiday-escape-cover.png
+cover: /assets/holiday-escape-cover.png
 excerpt: A week-long holiday themed escape room installation featuring electromechanical and traditional puzzles.
 roles: Producer, Technical Designer
 color: "#B7CCEB"

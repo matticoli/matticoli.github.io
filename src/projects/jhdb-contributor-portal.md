@@ -1,7 +1,7 @@
 ---
 title: JHDB Global Contributor Portal
 slug: jhdb-global
-cover: assets/jhdb-cover.png
+cover: /assets/jhdb-cover.png
 excerpt: Accessible tool for the global jazz community to contribute historical artifacts to the Jazz History Database.
 roles: Lead Engineer, Technical Designer, SysAdmin
 color: "#EEE"

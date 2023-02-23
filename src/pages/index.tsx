@@ -1,6 +1,3 @@
-import { readFileSync } from 'fs'
-import { readdir } from 'fs/promises'
-import matter from 'gray-matter'
 import type { NextPage } from 'next'
 import Button from '../components/button'
 import { CardInner, CardOuter } from '../components/card'
@@ -8,22 +5,12 @@ import Elec from '../components/elec'
 import Hi from '../components/hi'
 import PageContainer from '../components/page-container'
 import ProjectTile from '../components/project-tile'
+import { getAllProjects } from './api/projects-static'
 
-//TODO move to API
 export async function getStaticProps() {
-  console.log("Getting static props");
-  const dir = await readdir('projects', { withFileTypes: true });
-  const projects = dir.map((proj) => {
-    const f = readFileSync(`projects/${proj.name}`, { encoding: 'utf-8' });
-    const m = matter(f);
-    return { ...m.data, content: m.content };
-  });
-
-  console.log(JSON.stringify(projects));
-
   return {
     props: {
-      projects,
+      projects: await getAllProjects(),
     },
   };
 }
@@ -42,7 +29,7 @@ const Home: NextPage = (props: any) => {
               <Hi className="mt-auto mb-auto" />
               <img className="sm:w-6/12" src="/assets/111-coding.png" alt="A web illustration of a smiling coffy cup and a clipboard checklist next to a laptop" />
             </div>
-            <div className="mt-3 text-lg text-left ml-5 mr-5 flex flex-col gap-4 mb-5">
+            <div className="mt-3 text-sm sm:text-lg text-left ml-5 mr-5 flex flex-col gap-4 mb-5">
               <p>
                 I’m a Engineer & Technical Designer with a passion for making things and helping others.
                 I have <a className="text-primary underline" href="/resume.pdf">8+ years of experience</a> in full stack software engineering, project management, experience design, & IT.
@@ -58,7 +45,7 @@ const Home: NextPage = (props: any) => {
         <div className="mt-10 mb-[-5px] pb-10 w-full min-h-screen bg-[#121212CC] backdrop-blur-md">
           <h2 className="text-3xl text-primary text-center m-4 mt-8">Featured Projects</h2>
           <div className="w-full flex gap-4 sm:gap-10 flex-row flex-wrap items-center justify-center pt-4">
-            {props.projects.map((proj: any) => {
+            {props.projects.filter((proj: any) => proj.featured).map((proj: any) => {
               return <ProjectTile key={proj.slug} {...proj} />
             })}
             <CardInner type="M" className="w-80 h-40 bg-[#2c2c2cCC] max-w-xxl sm:max-w-sm flex flex-col justify-center">

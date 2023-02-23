@@ -15,12 +15,14 @@ interface CardProps {
     type?: CardType | string
     className?: string
     reverse?: boolean
+    override?: boolean
+    color?: string
     children: any
 }
 
 export function CardOuter(props: CardProps) {
     return <>
-        <div style={{backgroundColor: "#121212BB"}} className={"backdrop-blur-sm w-11/12 sm:w-10/12 lg:w-9/12 mr-10 ml-10 mt-5 mb-5" + shapeDefault(props.reverse)}>
+        <div style={{backgroundColor: props.color || "#121212BB"}} className={(props.override ? props.className : "backdrop-blur-sm w-11/12 sm:w-10/12 lg:w-9/12 mr-10 ml-10 mt-5 mb-5 " + props.className) + shapeDefault(props.reverse)}>
                 <div className="bg-transparent opacity-100">
                     {props.children}
                 </div>
@@ -39,7 +41,7 @@ export function CardInner(props: CardProps) {
     };
 
     return <>
-        <div style={{backgroundColor: "#2c2c2cCC"}} className={"p-5 m-5" + shape}>
+        <div style={{backgroundColor: props.color || "#2c2c2cCC"}} className={"p-5 m-5 " + shape}>
             <div className={"bg-transparent opacity-100 "+props.className}>
                 {props.children}
             </div>

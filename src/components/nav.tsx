@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import {  FaCogs, FaHome, FaUserAlt } from 'react-icons/fa';
 
 export default function Nav(props: any) {
     const router = useRouter();
@@ -36,16 +37,16 @@ export default function Nav(props: any) {
                     className="mt-3 ml-auto mr-auto flex-none sm:hidden"
                     alt="Mikel's personal logo - a programmer terminal, gear, and checkox inside a lightbulb" />
         </>}
-            <div className={(!props.sticky ? "hidden sm:flex " : "") + "flex justify-center text-center sm:justify-left sm:text-left text-xl pt-4 gap-10 sm:mr-4 "}>
+            <div className={(!props.sticky ? "hidden sm:flex " : "") + "flex justify-center text-center sm:justify-left sm:text-left sm:text-lg pt-4 gap-10 sm:mr-4 "}>
                 <span className="flex-1 hidden sm:block" />
-                <Link className={"w-20 hover-text-primary" + (routeDec())} href="/">
-                    Home
+                <Link className={"flex flex-row gap-1 w-30 hover-text-primary" + (routeDec())} href="/">
+                    <FaHome className="mt-auto mb-auto" /><span className="mb-auto mt-auto">Home</span>
                 </Link>
-                <Link className={"w-20 hover-text-primary" + (routeDec('about'))} href="/about">
-                    About
+                <Link className={"flex flex-row gap-1 w-30 hover-text-primary" + (routeDec('about'))} href="/about">
+                    <FaUserAlt className="mt-auto mb-auto" /><span className="mb-auto mt-auto"> About</span>
                 </Link>
-                <Link className={"w-20 hover-text-primary" + (routeDec('projects'))} href="/projects">
-                    Projects
+                <Link className={"flex flex-row gap-1 w-30 hover-text-primary" + (routeDec('projects'))} href="/projects">
+                <FaCogs className="mt-auto mb-auto" /><span className="mb-auto mt-auto">Projects</span>
                 </Link>
             </div>
         </div>
