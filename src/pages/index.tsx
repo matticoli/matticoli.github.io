@@ -38,8 +38,8 @@ const Home: NextPage = (props: any) => {
             </div>
           </CardInner>
           <CardInner className="flex flex-row gap-4 sm:gap-10 justify-center" type="B">
-            <Button className="inline">More About</Button>
-            <Button className="inline">Cool Things</Button>
+            <Button href="/about" className="inline">More About</Button>
+            <Button href="/projects" className="inline">Cool Things</Button>
           </CardInner>
         </CardOuter>
         <div className="mt-10 mb-[-5px] pb-10 w-full min-h-screen bg-[#121212CC] backdrop-blur-md">
