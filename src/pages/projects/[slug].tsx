@@ -32,9 +32,8 @@ export async function getStaticProps({ params } : any) {
   }
 
 const YouTubeEmbed = ({src} : any) => {
-    return <iframe className="w-full sm:min-h-[300px]" src={src} >Failed to load video</iframe>
+    return <iframe style={{maxWidth: "80%", margin: "auto", marginBottom: 30, height: "100%"}} title="YouTube video player" data-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="w-full h-full sm:min-h-[300px]" src={src} >Failed to load video</iframe>
 }
-
 const Project: NextPage = ({project}: any) => {
   return <>
     <PageContainer title="Projects">
@@ -55,22 +54,22 @@ const Project: NextPage = ({project}: any) => {
                         src={project.cover} />
                 </div>
                 <CardInner type="B" className="flex flex-col p-0 pl-0 pt-0 pb-0 pr-0 text-center">
-                    <h3 className="text-primary text-md">Project Type</h3>
+                    <h3 className="text-primary text-lg">Project Type</h3>
                     {iconMap[project['type_icon']] || <FaDesktop className="text-primary ml-auto mr-auto" />}
-                    <p className="text-xs mb-5">{project.type}</p>
-                    <h3 className="text-primary text-md">My Roles</h3>
+                    <p className="text-sm mb-5">{project.type}</p>
+                    <h3 className="text-primary text-lg">My Roles</h3>
                     <FaUserAstronaut className="text-primary ml-auto mr-auto" />
-                    <p className="text-xs mb-5">{project.roles}</p>
-                    <h3 className="text-primary text-md">Responsibilities</h3>
+                    <p className="text-sm mb-5">{project.roles}</p>
+                    <h3 className="text-primary text-lg">Responsibilities</h3>
                     <FaTasks className="text-primary ml-auto mr-auto" />
-                    <p className="text-xs mb-5">{project.responsibilities}</p>
-                    <h3 className="text-primary text-md">Team Size</h3>
+                    <p className="text-sm mb-5">{project.responsibilities}</p>
+                    <h3 className="text-primary text-lg">Team Size</h3>
                     <FaUsers className="text-primary ml-auto mr-auto" />
                     <p className="text-md mb-5">{project.team_size}</p>
-                    <h3 className="text-primary text-md">Timeline</h3>
+                    <h3 className="text-primary text-lg">Timeline</h3>
                     <FaClock className="text-primary ml-auto mr-auto" />
-                    <p className="text-xs mb-5">{project.timeline}</p>
-                    <h3 className="text-primary text-md">Achievements</h3>
+                    <p className="text-sm mb-5">{project.timeline}</p>
+                    <h3 className="text-primary text-lg">Achievements</h3>
                     <FaMedal className="text-primary ml-auto mr-auto" />
                     <ul className="text-xs mb-5">{project.achievements.map(a => {
                         return <li>• {a}</li>
@@ -97,7 +96,7 @@ const Project: NextPage = ({project}: any) => {
                         {project.media.map((t: any) => {
                             return <SwiperSlide className="flex flex-col items-center align-middle justify-center" key={t[0]}>
                                 {t[0].includes("png") || t[0].includes("jpg") ? 
-                                    <img src={t[0]} alt={t[1]} /> :
+                                    <img style={{maxWidth: "80%", margin: "auto", marginBottom: 30}} src={t[0]} alt={t[1]} /> :
                                  t[0].includes("youtu") ? 
                                     <YouTubeEmbed src={t[0]}>Failed to load video</YouTubeEmbed> :
                                  "Unrecognized media type "+t[0]
@@ -117,7 +116,7 @@ const Project: NextPage = ({project}: any) => {
                 </CardInner>
                 <CardInner reverse type="B" className="flex flex-row gap-4 justify-center">
                     {project.links.map((link: [string, string]) => {
-                        return <a className="hover:scale-125 hover:text-primary" key={link[0]} href={link[1]}>{iconMap[link[0]] || link[0]}</a>
+                        return <a className="hover:scale-110 hover:-translate-y-1" key={link[0]} href={link[1]}>{iconMap[link[0]] || link[0]}</a>
                     })}
                 </CardInner>
             </CardOuter>

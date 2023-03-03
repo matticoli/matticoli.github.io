@@ -12,6 +12,7 @@ tags:
   - ["Steam API", "#081A32"]
   - ["Git", "#E94F36"]
 featured: true
+priority: 1
 type: PC Game
 type_icon: windows
 responsibilities: Marketing, Community Management, Localization, Player Tech Support
@@ -27,8 +28,7 @@ achievements:
   - WPI Provost MQP Award
   - Featured in WPI Virtual Research Showcase
 media:
-  - ["https://matticoli.net/wp-content/uploads/2022/05/cover-web-1270x720-1.png", "Wordmark Call of Karen drippy font over a overhead rendering of the living room from the game"]
-  # - ["https://callofkaren.com/assets/images/massdigi-686x515.jpg", "The Call of Karen team at MassDigi Game Challenge 2020"]
+  - ["/assets/call-of-karen-couch-splash.png", "Wordmark Call of Karen drippy font over a overhead rendering of the living room from the game"]
   - ["https://www.youtube.com/embed/af-D036pR9A?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0"]
 links:
   - ["Website", "https://callofkaren.com/"]

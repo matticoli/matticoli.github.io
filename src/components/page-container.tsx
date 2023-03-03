@@ -16,7 +16,7 @@ export default function PageContainer(props: any) {
 			<Nav />
 			<Nav sticky />
 			<Fireflies />
-			<main className="flex w-full z-10 flex-1 flex-col items-center justify-center text-center fade-in transition-all duration-200">
+			<main className="flex w-full z-10 flex-1 flex-col items-center justify-center text-center transition ease-in-out duration-200">
 				{props.children}
 			</main>
 			<ContactPopup />

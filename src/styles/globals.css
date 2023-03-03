@@ -144,28 +144,34 @@
     }
 
     .md h1 {
-        font-size: 1.125rem;
+        font-size: 1.4rem;
         line-height: 1.75rem;
         color: var(--primary);
     }
 
     .md h2 {
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
         color: var(--primary);
     }
 
     .md h3 {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: var(--primary);
+    }
+    
+    .md h4 {
         font-size: 0.875rem;
         line-height: 1.25rem;
         color: var(--primary);
     }
 
     .md p {
-        font-size: 0.75rem;
-        line-height: 1rem;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 
     .md ul {
