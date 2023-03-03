@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import PageContainer from '../components/page-container'
 import { CardInner, CardOuter } from '../components/card'
-import { FaQuestionCircle } from "react-icons/fa";
+import { FaFilePdf, FaLinkedin, FaQuestionCircle } from "react-icons/fa";
+import Button from '../components/button';
 
 const About: NextPage = () => {
   return <>
@@ -37,9 +38,14 @@ const About: NextPage = () => {
               Looking for my resume? Here it is!
             </h3>
           </div>
+          <div className="flex flex-row gap-5 m-5 justify-center">
+            <Button className="w-20 sm:w-80 flex flex-row justify-center m-auto gap-2 text-lg" href="/resume.pdf"><FaFilePdf className="mt-auto mb-auto" /><span className="hidden sm:block">PDF Download</span></Button>
+            <Button className="w-20 sm:w-80 flex flex-row justify-center m-auto gap-2 text-lg" href="https://linkedin.com/in/matticoli"><FaLinkedin className="mt-auto mb-auto" /><span className="hidden sm:block">LinkedIn</span></Button>
+          </div>
           <iframe className="w-full sm:w-10/12 h-[70vw]" src="https://docs.google.com/gview?embedded=true&url=https://matticoli.net/resume.pdf">Failed to load resume - download <a href="/resume.pdf" target="_blank">here</a></iframe>
         </CardInner>
       </CardOuter>
+      <span className="h-10" />
     </PageContainer>
   </>
 }

@@ -6,7 +6,7 @@ export default function Elec(props: any) {
                         className="mt-3 flex-none bulb"
                         alt="Mikel's personal logo - a programmer terminal, gear, and checkox inside a lightbulb" />
         
-            <div className="elec h-[175vh] ml-[49.5px]"></div>
+            <div className="elec h-[160vh] ml-[49.5px]"></div>
         </div>
     </>
 }

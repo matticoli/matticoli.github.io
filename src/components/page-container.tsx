@@ -21,9 +21,9 @@ export default function PageContainer(props: any) {
 			</main>
 			<ContactPopup />
 			<footer className="flex flex-col justify-center items-center h-24 w-full bg-black z-30 opacity-80 p-5">
+				<span className="absolute sm:mt-[-12px] mb-40 right-20 w-40 z-10 animate-bounce">Contact me 👉</span> 
 				<p>©️2023 Mikel Matticoli. Made from scratch with <a href="https://nextjs.org">NextJS</a> and <a href="https://tailwindcss.com">Tailwind</a></p>
 				<div className="w-full">
-					<span className="absolute sm:mt-[-12px] right-4 w-40 animate-bounce">Contact me 👆</span> 
 				</div>
 			</footer>
 		</div>
