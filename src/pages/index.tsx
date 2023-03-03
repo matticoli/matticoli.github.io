@@ -49,7 +49,7 @@ const Home: NextPage = (props: any) => {
               return <ProjectTile key={proj.slug} {...proj} />
             })}
             <CardInner type="M" className="w-80 h-40 bg-[#2c2c2cCC] max-w-xxl sm:max-w-sm flex flex-col justify-center">
-              <Button className="m-auto w-60 text-xl text-center">All Projects</Button>
+              <Button href="/projects" className="m-auto w-60 text-xl text-center">All Projects</Button>
             </CardInner>
           </div>
         </div>
