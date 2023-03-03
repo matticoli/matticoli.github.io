@@ -1,19 +1,21 @@
 import type { NextPage } from 'next'
-import { FaClock, FaDesktop, FaLink, FaMedal, FaTasks, FaUserAstronaut, FaUsers, FaSteam, FaBook, FaWindows } from "react-icons/fa"
+import { FaClock, FaDesktop, FaLink,  FaMedal, FaTasks, FaUserAstronaut, FaUsers, FaSteam, FaBook, FaWindows, FaDoorOpen } from "react-icons/fa"
 import PageContainer from '../../components/page-container'
 import { CardInner, CardOuter } from '../../components/card'
 import { getProjectData, getProjectPaths } from '../api/projects-static'
 import Badge from './../../components/badge';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {EffectFlip, Navigation, Pagination } from 'swiper';
-import Button from '../../components/button';
+import { Project } from './../api/projects-static';
 
-const iconMap = {
+const iconMap : Record<string, JSX.Element> = {
     "Website": <div className="p-4 rounded-lg bg-primary"><FaLink /></div>,
     "Steam": <div style={{backgroundColor: '#2c4059'}} className="p-4 rounded-lg text-xl"><FaSteam /></div>,
     "Paper": <div style={{backgroundColor: '#6189b9'}} className="p-4 rounded-lg text-xl"><FaBook /></div>,
     "windows": <FaWindows className="text-primary ml-auto mr-auto" />,
+    "escape": <FaDoorOpen className="text-primary ml-auto mr-auto" />,
 };
+
 
 //TODO move to API
 export async function getStaticPaths() {
@@ -23,7 +25,11 @@ export async function getStaticPaths() {
     };
 }
 
-export async function getStaticProps({ params } : any) {
+interface ProjectProps {
+    project: Project
+}
+
+export async function getStaticProps({ params }: any) {
     return {
       props: {
         project: await getProjectData(params.slug),
@@ -34,7 +40,8 @@ export async function getStaticProps({ params } : any) {
 const YouTubeEmbed = ({src} : any) => {
     return <iframe style={{maxWidth: "80%", margin: "auto", marginBottom: 30, height: "100%"}} title="YouTube video player" data-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="w-full h-full sm:min-h-[300px]" src={src} >Failed to load video</iframe>
 }
-const Project: NextPage = ({project}: any) => {
+
+const ProjectPage: NextPage<ProjectProps> = ({project}) => {
   return <>
     <PageContainer title="Projects">
         <div className="w-full bg-black p-6">
@@ -55,7 +62,7 @@ const Project: NextPage = ({project}: any) => {
                 </div>
                 <CardInner type="B" className="flex flex-col p-0 pl-0 pt-0 pb-0 pr-0 text-center">
                     <h3 className="text-primary text-lg">Project Type</h3>
-                    {iconMap[project['type_icon']] || <FaDesktop className="text-primary ml-auto mr-auto" />}
+                    {iconMap[project.type_icon] || <FaDesktop className="text-primary ml-auto mr-auto" />}
                     <p className="text-sm mb-5">{project.type}</p>
                     <h3 className="text-primary text-lg">My Roles</h3>
                     <FaUserAstronaut className="text-primary ml-auto mr-auto" />
@@ -115,7 +122,7 @@ const Project: NextPage = ({project}: any) => {
                     <div className="md m-5 text-left" dangerouslySetInnerHTML={{__html: project.content}} />
                 </CardInner>
                 <CardInner reverse type="B" className="flex flex-row gap-4 justify-center">
-                    {project.links.map((link: [string, string]) => {
+                    {project.links.map((link: [string, string?]) => {
                         return <a className="hover:scale-110 hover:-translate-y-1" key={link[0]} href={link[1]}>{iconMap[link[0]] || link[0]}</a>
                     })}
                 </CardInner>
@@ -125,4 +132,4 @@ const Project: NextPage = ({project}: any) => {
   </>
 }
 
-export default Project
+export default ProjectPage
