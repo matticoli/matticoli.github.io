@@ -31,7 +31,7 @@ const Home: NextPage = (props: any) => {
             </div>
             <div className="mt-3 text-sm sm:text-lg text-left ml-5 mr-5 flex flex-col gap-4 mb-5">
               <p>
-                I’m a Engineer & Technical Designer with a passion for making things and helping others.
+                I’m an Engineer & Technical Designer with a passion for making things and helping others.
                 I have <a className="text-primary underline" href="/resume.pdf">8+ years of experience</a> in full stack software engineering, project management, experience design, & IT.
                 These are some <a className="text-primary underline" href="/projects">cool things</a> I’ve made!
               </p>
