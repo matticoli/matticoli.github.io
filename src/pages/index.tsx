@@ -24,23 +24,22 @@ const Home: NextPage = (props: any) => {
           <span className="flex-grow w-11/12 sm:w-10/12 lg:w-9/12 xl:w-8/12" />
         </div>
         <CardOuter>
-          <CardInner type="T">
-            <div className="flex flex-wrap align-center justify-center m-4">
+          <CardInner>
               <Hi className="mt-auto mb-auto" />
+            <div className="flex flex-wrap align-center justify-center">
+              {/* <video muted autoPlay className="sm:w-6/12 absolute h-40 w-20" src="https://test4.mikel.tech/arcade-foldup-fb.mp4" /> */}
               <img className="sm:w-6/12" src="/assets/111-coding.png" alt="A web illustration of a smiling coffy cup and a clipboard checklist next to a laptop" />
             </div>
-            <div className="mt-3 text-sm sm:text-lg text-left ml-5 mr-5 flex flex-col gap-4 mb-5">
+            <div className="mt-3 text-sm sm:text-lg ml-5 mr-5 flex flex-col gap-4 mb-5">
               <p>
                 I’m an Engineer & Technical Designer with a passion for making things and helping others.
-                I have <a className="text-primary underline" href="/resume.pdf">8+ years of experience</a> in full stack software engineering, project management, experience design, & IT.
-                These are some <a className="text-primary underline" href="/projects">cool things</a> I’ve made!
               </p>
             </div>
           </CardInner>
-          <CardInner className="flex flex-row gap-4 sm:gap-10 justify-center" type="B">
+          {/* <CardInner className="flex flex-row gap-4 sm:gap-10 justify-center" type="B">
             <Button href="/about" className="inline">More About</Button>
             <Button href="/projects" className="inline">Cool Things</Button>
-          </CardInner>
+          </CardInner> */}
         </CardOuter>
         <div className="mt-10 mb-[-5px] pb-10 w-full min-h-screen bg-[#121212CC] backdrop-blur-md">
           <h2 className="text-3xl text-primary text-center m-4 mt-8">Featured Projects</h2>

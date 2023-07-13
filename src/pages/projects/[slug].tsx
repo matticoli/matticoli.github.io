@@ -46,11 +46,11 @@ const ProjectPage: NextPage<ProjectProps> = ({project}) => {
     <PageContainer title="Projects">
         <div className="w-full bg-black p-6">
             <h1 className="text-4xl">{project.title}</h1>
-            <span className="text-xs"><a  href="/projects">projects</a> {">"} {project.slug}</span>
+            <span className="text-xs text-[var(--primary)]"><a className="underline" href="/projects">projects</a> {">"} {project.slug}</span>
         </div>
-        <div className="flex flex-col gap-4 lg:gap-2 lg:flex-row w-full sm:w-9/12 lg:w-8/12 mr-10 ml-10 mt-5 mb-5">
+        <div className="flex flex-col gap-4 lg:gap-2 lg:flex-row w-full sm:w-11/12 lg:w-10/12 mr-10 ml-10 mt-5 mb-5">
             <CardOuter override className="sm:flex-initial backdrop-blur-sm sm:min-w-[250px] w-full ml-auto mr-auto sm:w-full lg:w-[25%] ">
-                <CardInner color="var(--primary)" type="T">
+                {/* <CardInner color="var(--primary)" type="T">
                     <span className="text-xl">Quick Facts</span>
                 </CardInner>
                 <div className="m-5">
@@ -59,8 +59,8 @@ const ProjectPage: NextPage<ProjectProps> = ({project}) => {
                         title={project.title} 
                         alt={`${project.title} title card`} 
                         src={project.cover} />
-                </div>
-                <CardInner type="B" className="flex flex-col p-0 pl-0 pt-0 pb-0 pr-0 text-center">
+                </div> */}
+                <CardInner type="" className="flex flex-col p-0 pl-0 pt-0 pb-0 pr-0 text-center">
                     <h3 className="text-primary text-lg">Project Type</h3>
                     {iconMap[project.type_icon] || <FaDesktop className="text-primary ml-auto mr-auto" />}
                     <p className="text-sm mb-5">{project.type}</p>
@@ -85,12 +85,12 @@ const ProjectPage: NextPage<ProjectProps> = ({project}) => {
                 </CardInner>
             </CardOuter>
             <CardOuter override reverse className="sm:flex-initial backdrop-blur-sm sm:min-w-[500px] w-full ml-auto mr-auto sm:w-full lg:w-[66%] ">
-                <CardInner reverse type="T">
+                {/* <CardInner reverse type="T">
                     <span className="text-2xl">
                         {project.title}
                     </span>
-                </CardInner> 
-                <CardInner type="M">
+                </CardInner>  */}
+                <CardInner type="T" reverse>
                     <Swiper spaceBetween={50}
                             modules={[Navigation, Pagination, EffectFlip]}
                             mousewheel={true}

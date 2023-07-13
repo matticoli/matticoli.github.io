@@ -25,8 +25,8 @@ const About: NextPage = () => {
             </div>
           </div>
           <div className="text-left">
-            <p className="text-md p-5">I enjoy making things of all kinds – from websites, software, and robots, to crafts and foods. I find joy in things created by others too – particularly food, games, and stories, especially when they provide shared experiences with friends or family.</p>
-            <p className="text-md p-5">Professionally, I've had the privilege of working with many great people to develop software solutions for a variety of audiences, build scalable and sustainable technical infrastructure, and design interactive experiences that people around the world have connected with.</p>
+            <p className="text-md p-5">I enjoy crafting experiences of all kinds: from websites, software, robots and escape rooms to handmade crafts and cooking/baking. I find joy in things created by others too – particularly food, games, and stories, especially when they provide shared experiences with friends or family.</p>
+            <p className="text-md p-5">Professionally, I've had the privilege of working with many great people to design and build software solutions for a variety of audiences, scalable and sustainable technical infrastructure, and interactive experiences that people around the world have connected with.</p>
           </div>
         </CardInner>
       </CardOuter>
