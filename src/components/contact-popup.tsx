@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { BsFileEarmarkPdfFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaGithub, FaLinkedin, FaBriefcase, FaTimesCircle } from "react-icons/fa";
 
 export default function ContactPopup(props: any) {
@@ -14,9 +15,9 @@ export default function ContactPopup(props: any) {
             {/* <input type="text" className="p-1 rounded-md" placeholder="Your Email/Callback #" />
             <textarea className="p-1 rounded-md h-20 resize-none" placeholder="Message" /> */}
             <div className="flex flex-row align-center justify-center gap-6 sm:gap-12 text-2xl mt-4">
-                <a title="Resume" href="/resume.pdf" target="_blank"><FaBriefcase /></a>
-                <a title="LinkedIn" href="https://linkedin.com/in/matticoli" target="_blank"><FaLinkedin /></a>
-                <a title="GitHub" href="https://github.com/matticoli" target="_blank"><FaGithub /></a>
+                <a title="Resume" href="/resume.pdf" target="_blank"><BsFileEarmarkPdfFill /></a>
+                <a title="LinkedIn" href="https://linkedin.com/in/matticoli" target="_blank"><BsLinkedin /></a>
+                <a title="GitHub" href="https://github.com/matticoli" target="_blank"><BsGithub /></a>
             </div>
         </div>
         <button className="sticky bottom-0 mt-[-64px] ml-auto z-50 mr-10 hover:scale-125 " onClick={() => setOpen(!open)}>

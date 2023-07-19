@@ -8,7 +8,7 @@ export default function Hi({className}: any) {
                     <ReactTypingEffect 
                         staticText={'👋 Hi!'}
                         text={"I'm Mikel"}
-                        eraseDelay={30000}
+                        eraseDelay={45000}
                         cursor={'_'} />
             </h2>
         </div>

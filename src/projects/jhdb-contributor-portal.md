@@ -2,7 +2,7 @@
 title: JHDB Global Contributor Portal
 slug: jhdb-contributor-portal
 cover: /assets/jhdb-cover.png
-excerpt: Accessible tool for the global jazz community to contribute historical artifacts to the Jazz History Database.
+excerpt: Accessible tool for the global jazz community to contribute historical artifacts and full exhibits to the Jazz History Database.
 roles: Lead Engineer, Technical Designer
 color: "#EEE"
 tags:
@@ -27,17 +27,9 @@ media:
   - ["/assets/jhdb-screenshot-form.png", "A screenshot of the contributor portal exhibit editor"]
   - ["https://www.youtube.com/embed/GirVi49SW_g?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0"]
 links:
-  - ["Website", "https://callofkaren.com/"]
-  - ["Steam", "https://store.steampowered.com/app/1320550/The_Call_of_Karen/"]
-  - ["Paper", "https://digital.wpi.edu/pdfviewer/b5644v04t"]
+  - ["Website", "https://global.jazzhistorydatabase.com/"]
+  - ["Paper", "https://digital.wpi.edu/pdfviewer/xp68kj77w"]
 ---
-## Description
-
-The Jazz History Database is a non-profit organization at WPI that archives recordings, photographs, and other jazz artifacts from around the world that might otherwise deteriorate. This archive, accessible at jazzhistorydatabase.com, was previously maintained by students and faculty who built the website by hand. Our goal was to design, build and document a web-based tool to allow volunteers and international correspondents to upload digitized jazz artifacts into a simple web form that would subsequently output and publish template-based web pages.
-
-The Contributor Portal empowers jazz musicians, archivists and educators from all around the world to effortlessly contribute to the JHDB’s online museum without technical barriers. It's designed to be accessible to non-technical users that might be daunted by more complex archival software, and thus comes with a video walkthrough on the landing page
-
-
 # Personal Accomplishments
 - Developed a reliable zero-cost architecture utilizing Dropbox API and GCP free tier
 
@@ -50,3 +42,10 @@ The Contributor Portal empowers jazz musicians, archivists and educators from al
 - Created instructional materials for non-technical users to gain familiarity and comfort with the tool prior to first use
 
 - Co-authored a published research paper detailing the project’s design process and technical implementation
+
+
+## Description
+
+The Jazz History Database is a non-profit organization at WPI that archives recordings, photographs, and other jazz artifacts from around the world that might otherwise deteriorate. This archive, accessible at jazzhistorydatabase.com, was previously maintained by students and faculty who built the website by hand. Our goal was to design, build and document a web-based tool to allow volunteers and international correspondents to upload digitized jazz artifacts into a simple web form that would subsequently output and publish template-based web pages.
+
+The Contributor Portal empowers jazz musicians, archivists and educators from all around the world to effortlessly contribute to the JHDB’s online museum without technical barriers. It's designed to be accessible to non-technical users that might be daunted by more complex archival software, and thus comes with a video walkthrough on the landing page.

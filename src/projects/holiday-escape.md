@@ -32,13 +32,15 @@ links:
   - ["Website", "https://escaperoom.wpi.edu/"]
 ---
 ## Description
-Holiday Escape was a week-long escape room installation designed and built through the collaborative effort of 16 graduate and undergraduate students. The project involved the design, implementation, and integration of various codebreaking, strategy, and skill-based puzzles for teams of 5-7. Several of these included custom electronics such as microcontroller-driven buttons, lights, solenoids, and locks in combination with traditional combination locks. The second stage of the escape room (the train) featured a live view out the "windows" of the train using 2 TVs driven by a Unity scene, which become interactive in the final puzzle where player's must all work together to press buttons located around the room based on directions from a digital character outside the window.
+Holiday Escape was a week-long escape room installation designed and built through the collaborative effort of 16 graduate and undergraduate students. The project involved the design, implementation, and integration of various codebreaking, strategy, and skill-based puzzles for teams of 5-7. Several of these included custom electronics such as microcontroller-driven buttons, lights, solenoids, and locks in combination with traditional combination locks. 
+![Electronic map puzzle](http://localhost:3000/assets/escaperoom-map.jpg)
+The second stage of the escape room (the train) featured a live view out the "windows" of the train using 2 TVs driven by a Unity scene, which become interactive in the final puzzle where player's must all work together to press buttons located around the room based on directions from a digital character outside the window.
 
 The room control system utilized a custom timer program with "cutscene" video, and provided a live video and audio feed of the full room to the game-master located outside. The puzzle master, playing the role of Jingle the Elf - leader of the elf crew that hijacked the train, was able to communicate with players in real-time via a 2-way audio stream (the train's "PA system" and some hidden microphones), in order to provide hints and comedic commentary.
 
 Holiday Escape was the 2021 installment of the annual event, hosted by Worcester Polytechnic Institute's Interactive Media department. The project was pioneered by [Professor Dean O'Donnell](https://dodo.wpi.edu) in 2017, and continued on an alternating basis through his course on Design of Interactive Experiences, and teams of volunteers in years the course was not offered. Holiday Escape was the fifth and final escape room designed and built at WPI under Dean's mentorship, and I am honored and grateful to have had the opportunity to work with him on what several attendees declared the best one yet.
 
-Credit to [Max Chen](https://jingruchenmax.github.io/index.html), the lead puzzle designer on the project, and [Darren Cole](https://www.wpi.edu/student-experience/community/voices/darren-cole), our video and streaming expert, for the demo reel featured above. 
+Credit to [Max Chen](https://jingruchenmax.github.io/index.html), the lead puzzle designer on the project, and [Darren Cole](https://www.wpi.edu/student-experience/community/voices/darren-cole), our video and production expert, for the demo reel featured above. 
 
 ## Personal Accomplishments
 - Led a team of 16 in all aspects of design, construction, and execution of a week-long escape room installation
@@ -47,6 +49,6 @@ Credit to [Max Chen](https://jingruchenmax.github.io/index.html), the lead puzzl
 
 - Ensured on-time and on-budget completion of all deliverables despite unforeseeable obstacles
 
-- Fulfilled responsibilities of construction lead and electronics lead during extended medical absences on build/show weeks
+- Successfully fulfilled or delegated all responsibilities of construction lead and electronics lead during extended medical absences on build/show weeks
 
 - Solved evolving technical design problems using a combination of software, hardware, and "low-tech" tools
