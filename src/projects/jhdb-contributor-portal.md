@@ -27,9 +27,8 @@ media:
   - ["/assets/jhdb-screenshot-form.png", "A screenshot of the contributor portal exhibit editor"]
   - ["https://www.youtube.com/embed/GirVi49SW_g?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0"]
 links:
-  - ["Website", "https://callofkaren.com/"]
-  - ["Steam", "https://store.steampowered.com/app/1320550/The_Call_of_Karen/"]
-  - ["Paper", "https://digital.wpi.edu/pdfviewer/b5644v04t"]
+  - ["Website", "https://global.jazzhistorydatabase.com/"]
+  - ["Paper", "https://digital.wpi.edu/pdfviewer/xp68kj77w"]
 ---
 # Personal Accomplishments
 - Developed a reliable zero-cost architecture utilizing Dropbox API and GCP free tier
