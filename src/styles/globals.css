@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lexend+Giga:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css?family=Lexend:regular,bold,italic&subset=latin,latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Lexend+Giga:regular,bold,italic&subset=latin,latin-ext');
+
 
 @layer base {
 
