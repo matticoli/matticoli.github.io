@@ -49,42 +49,32 @@ const ProjectPage: NextPage<ProjectProps> = ({project}) => {
             <span className="text-xs text-[var(--primary)]"><a className="underline" href="/projects">projects</a> {">"} {project.slug}</span>
         </div>
         <div className="flex flex-col gap-4 lg:gap-2 lg:flex-row w-full sm:w-11/12 lg:w-10/12 mr-10 ml-10 mt-5 mb-5">
-            <CardOuter override className="sm:flex-initial backdrop-blur-sm sm:min-w-[250px] w-full ml-auto mr-auto sm:w-full lg:w-[25%] ">
-                {/* <CardInner color="var(--primary)" type="T">
-                    <span className="text-xl">Quick Facts</span>
-                </CardInner>
-                <div className="m-5">
-                    <img className="w-full w-max-full border-2"  
-                        style={{borderColor: project.color}}  
-                        title={project.title} 
-                        alt={`${project.title} title card`} 
-                        src={project.cover} />
-                </div> */}
+            <CardOuter override className="h-fit sm:flex-initial backdrop-blur-sm sm:min-w-[250px] w-full ml-auto mr-auto sm:w-full lg:w-[25%] ">
                 <CardInner type="" className="flex flex-col p-0 pl-0 pt-0 pb-0 pr-0 text-center">
                     <h3 className="text-primary text-lg">Project Type</h3>
-                    {iconMap[project.type_icon] || <FaDesktop className="text-primary ml-auto mr-auto" />}
+                    {iconMap[project.type_icon] || <FaDesktop className="text-primary ml-auto mr-auto mb-1" />}
                     <p className="text-sm mb-5">{project.type}</p>
                     <h3 className="text-primary text-lg">My Roles</h3>
-                    <FaUserAstronaut className="text-primary ml-auto mr-auto" />
+                    <FaUserAstronaut className="text-primary ml-auto mr-auto mb-1" />
                     <p className="text-sm mb-5">{project.roles}</p>
                     <h3 className="text-primary text-lg">Responsibilities</h3>
-                    <FaTasks className="text-primary ml-auto mr-auto" />
+                    <FaTasks className="text-primary ml-auto mr-auto mb-1" />
                     <p className="text-sm mb-5">{project.responsibilities}</p>
                     <h3 className="text-primary text-lg">Team Size</h3>
-                    <FaUsers className="text-primary ml-auto mr-auto" />
+                    <FaUsers className="text-primary ml-auto mr-auto mb-1" />
                     <p className="text-md mb-5">{project.team_size}</p>
                     <h3 className="text-primary text-lg">Timeline</h3>
-                    <FaClock className="text-primary ml-auto mr-auto" />
+                    <FaClock className="text-primary ml-auto mr-auto mb-1" />
                     <p className="text-sm mb-5">{project.timeline}</p>
                     <h3 className="text-primary text-lg">Achievements</h3>
-                    <FaMedal className="text-primary ml-auto mr-auto" />
+                    <FaMedal className="text-primary ml-auto mr-auto mb-1" />
                     <ul className="text-xs mb-5">{project.achievements.map(a => {
                         return <li>• {a}</li>
                     })}</ul>
                     
                 </CardInner>
             </CardOuter>
-            <CardOuter override reverse className="sm:flex-initial backdrop-blur-sm sm:min-w-[500px] w-full ml-auto mr-auto sm:w-full lg:w-[66%] ">
+            <CardOuter override reverse className="h-min sm:flex-initial backdrop-blur-sm sm:min-w-[500px] w-full ml-auto mr-auto sm:w-full lg:w-[66%] ">
                 {/* <CardInner reverse type="T">
                     <span className="text-2xl">
                         {project.title}

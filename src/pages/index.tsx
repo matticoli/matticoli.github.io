@@ -36,13 +36,9 @@ const Home: NextPage = (props: any) => {
               </p>
             </div>
           </CardInner>
-          {/* <CardInner className="flex flex-row gap-4 sm:gap-10 justify-center" type="B">
-            <Button href="/about" className="inline">More About</Button>
-            <Button href="/projects" className="inline">Cool Things</Button>
-          </CardInner> */}
         </CardOuter>
-        <div className="mt-10 mb-[-5px] pb-10 w-full min-h-screen bg-[#121212CC] backdrop-blur-md">
-          <h2 className="text-3xl text-primary text-center m-4 mt-8">Featured Projects</h2>
+        <div className="mt-10 mb-[-5px] pb-10 w-full min-h-screen bg-[#080808CC] backdrop-blur-md">
+          <h2 className="text-3xl text-primary text-center m-4 mt-10">Featured Projects</h2>
           <div className="w-full flex gap-4 sm:gap-10 flex-row flex-wrap items-center justify-center pt-4">
             {props.projects.filter((proj: any) => proj.featured).map((proj: any) => {
               return <ProjectTile key={proj.slug} {...proj} />
