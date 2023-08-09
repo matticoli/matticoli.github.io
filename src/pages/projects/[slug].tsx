@@ -8,12 +8,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import {EffectFlip, Navigation, Pagination } from 'swiper';
 import { Project } from './../api/projects-static';
 
+const iconClass= "text-primary inline ml-2 mb-1"
 const iconMap : Record<string, JSX.Element> = {
     "Website": <div className="p-4 rounded-lg bg-primary"><FaLink /></div>,
     "Steam": <div style={{backgroundColor: '#2c4059'}} className="p-4 rounded-lg text-xl"><FaSteam /></div>,
     "Paper": <div style={{backgroundColor: '#6189b9'}} className="p-4 rounded-lg text-xl"><FaBook /></div>,
     "windows": <FaWindows className="text-primary ml-auto mr-auto" />,
-    "escape": <FaDoorOpen className="text-primary ml-auto mr-auto" />,
+    "escape": <FaDoorOpen className={iconClass} />,
 };
 
 
@@ -49,26 +50,32 @@ const ProjectPage: NextPage<ProjectProps> = ({project}) => {
             <span className="text-xs text-[var(--primary)]"><a className="underline" href="/projects">projects</a> {">"} {project.slug}</span>
         </div>
         <div className="flex flex-col gap-4 lg:gap-2 lg:flex-row w-full sm:w-11/12 lg:w-10/12 mr-10 ml-10 mt-5 mb-5">
-            <CardOuter override className="h-fit sm:flex-initial backdrop-blur-sm sm:min-w-[250px] w-full ml-auto mr-auto sm:w-full lg:w-[25%] ">
-                <CardInner type="" className="flex flex-col p-0 pl-0 pt-0 pb-0 pr-0 text-center">
-                    <h3 className="text-primary text-lg">Project Type</h3>
-                    {iconMap[project.type_icon] || <FaDesktop className="text-primary ml-auto mr-auto mb-1" />}
+            <CardOuter override className="h-fit sm:flex-initial backdrop-blur-sm sm:min-w-[250px] w-full ml-auto mr-auto sm:w-full lg:w-[30%] ">
+                <CardInner type="" className="flex flex-col p-0 pl-0 pt-0 pb-0 pr-0 text-left">
+                    <h3 className="text-primary text-lg">Project Type
+                        {iconMap[project.type_icon] || <FaDesktop className={iconClass} />}
+                    </h3>
                     <p className="text-sm mb-5">{project.type}</p>
-                    <h3 className="text-primary text-lg">My Roles</h3>
-                    <FaUserAstronaut className="text-primary ml-auto mr-auto mb-1" />
+                    <h3 className="text-primary text-lg">My Roles
+                        <FaUserAstronaut className={iconClass} />
+                    </h3>
                     <p className="text-sm mb-5">{project.roles}</p>
-                    <h3 className="text-primary text-lg">Responsibilities</h3>
-                    <FaTasks className="text-primary ml-auto mr-auto mb-1" />
-                    <p className="text-sm mb-5">{project.responsibilities}</p>
-                    <h3 className="text-primary text-lg">Team Size</h3>
-                    <FaUsers className="text-primary ml-auto mr-auto mb-1" />
+                    <h3 className="text-primary text-lg">Team Size
+                        <FaUsers className={iconClass} />
+                    </h3>
                     <p className="text-md mb-5">{project.team_size}</p>
-                    <h3 className="text-primary text-lg">Timeline</h3>
-                    <FaClock className="text-primary ml-auto mr-auto mb-1" />
+                    <h3 className="text-primary text-lg">Responsibilities
+                        <FaTasks className={iconClass} />
+                    </h3>
+                    <p className="text-sm mb-5">{project.responsibilities}</p>
+                    <h3 className="text-primary text-lg">Timeline
+                        <FaClock className={iconClass} />
+                    </h3>
                     <p className="text-sm mb-5">{project.timeline}</p>
-                    <h3 className="text-primary text-lg">Achievements</h3>
-                    <FaMedal className="text-primary ml-auto mr-auto mb-1" />
-                    <ul className="text-xs mb-5">{project.achievements.map(a => {
+                    <h3 className="text-primary text-lg">Achievements
+                        <FaMedal className={iconClass} />
+                    </h3>
+                    <ul className="text-sm mb-5">{project.achievements.map(a => {
                         return <li>• {a}</li>
                     })}</ul>
                     
@@ -109,7 +116,7 @@ const ProjectPage: NextPage<ProjectProps> = ({project}) => {
                             return <Badge key={t[0]} className="text-xs" bg={t[1]}>{t[0]}</Badge>
                         })}
                     </div>
-                    <div className="md m-5 text-left" dangerouslySetInnerHTML={{__html: project.content}} />
+                    <div className="md m-5 text-sm text-left" dangerouslySetInnerHTML={{__html: project.content}} />
                 </CardInner>
                 <CardInner reverse type="B" className="flex flex-row gap-4 justify-center">
                     {project.links.map((link: [string, string?]) => {
