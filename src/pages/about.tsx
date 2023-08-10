@@ -12,7 +12,7 @@ const About: NextPage = () => {
         <CardInner>
           <div className="flex flex-col sm:flex-row sm:gap-10 p-4 mt-[-100px] justify-center items-center sm:gap-0">
             <div className="w-60 flex flex-col gap-1">
-              <img  src="/assets/profile.png" 
+              <img  src="/assets/profile.jpg" 
                     className="w-40 h-40 max-w-40 max-h-40 ml-auto mr-auto rounded-full bg-white border-2 border-white"
                     title="It's me!"
                     alt="A dark-haired man wearing rectangular glasses, a frog t-shirt, and black jacket+beanie" />

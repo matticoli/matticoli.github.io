@@ -23,11 +23,11 @@ achievements:
   - Strong praise from new and returning customers
   - 90% Completion rate with no players reporting it as too easy
 media:
+  - ["https://www.youtube.com/embed/4J_MeGeoCak?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0"]
   - ["/assets/escaperoom-car.jpg", "A dining train car themed escape room set"]
   - ["/assets/escaperoom-map.jpg", "A wooden map puzzle with light-up electronic buttons"]
   - ["/assets/escaperoom-screen.jpg", "Game master's video feed of the escape room with players inside"]
   - ["/assets/escaperoom-train.jpg", "A false wall painted to look like a train on a train platform set"]
-  - ["https://www.youtube.com/embed/4J_MeGeoCak?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0"]
 links:
   - ["Website", "https://escaperoom.wpi.edu/"]
 ---

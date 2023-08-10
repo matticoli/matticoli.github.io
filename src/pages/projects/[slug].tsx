@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { FaClock, FaDesktop, FaLink,  FaMedal, FaTasks, FaUserAstronaut, FaUsers, FaSteam, FaBook, FaWindows, FaDoorOpen } from "react-icons/fa"
+import { FaClock, FaDesktop, FaLink,  FaMedal, FaTasks, FaUserAstronaut, FaUsers, FaSteam, FaBook, FaWindows, FaDoorOpen, FaImages } from "react-icons/fa"
 import PageContainer from '../../components/page-container'
 import { CardInner, CardOuter } from '../../components/card'
 import { getProjectData, getProjectPaths } from '../api/projects-static'
@@ -7,6 +7,7 @@ import Badge from './../../components/badge';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {EffectFlip, Navigation, Pagination } from 'swiper';
 import { Project } from './../api/projects-static';
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
 const iconClass= "text-primary inline ml-2 mb-1"
 const iconMap : Record<string, JSX.Element> = {
@@ -39,7 +40,9 @@ export async function getStaticProps({ params }: any) {
   }
 
 const YouTubeEmbed = ({src} : any) => {
-    return <iframe style={{maxWidth: "80%", margin: "auto", marginBottom: 30, height: "100%"}} title="YouTube video player" data-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="w-full h-full sm:min-h-[300px]" src={src} >Failed to load video</iframe>
+    return <div style={{minWidth: "80%", maxWidth: "80%", margin: "auto", marginBottom: 30}}>
+        <iframe title="YouTube video player" data-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="w-full h-full" src={src} >Failed to load video</iframe>
+    </div>
 }
 
 const ProjectPage: NextPage<ProjectProps> = ({project}) => {
@@ -78,7 +81,23 @@ const ProjectPage: NextPage<ProjectProps> = ({project}) => {
                     <ul className="text-sm mb-5">{project.achievements.map(a => {
                         return <li>• {a}</li>
                     })}</ul>
-                    
+                    <h3 className="text-primary text-lg">Gallery
+                        <FaImages className={iconClass} />
+                    </h3>
+                    <div className="grid grid-cols-2 gap-4">
+                    {project.media.slice(1).map((t: any) => {
+                            const isImage = t[0].includes("png") || t[0].includes("jpg");
+                            const isVideo = t[0].includes("youtu");
+                            return <div className={"flex flex-col items-center align-middle justify-center"+(isVideo ? " col-span-2" : "")} key={t[0]}>
+                                {isImage ? 
+                                    <img className="w-max-[80%]" src={t[0]} alt={t[1]} /> :
+                                isVideo ? 
+                                    <YouTubeEmbed src={t[0]}>Failed to load video</YouTubeEmbed> :
+                                 "Unrecognized media type "+t[0]
+                                }
+                            </div>
+                        })}
+                        </div>
                 </CardInner>
             </CardOuter>
             <CardOuter override reverse className="h-min sm:flex-initial backdrop-blur-sm sm:min-w-[500px] w-full ml-auto mr-auto sm:w-full lg:w-[66%] ">
@@ -88,7 +107,24 @@ const ProjectPage: NextPage<ProjectProps> = ({project}) => {
                     </span>
                 </CardInner>  */}
                 <CardInner type="T" reverse>
-                    <Swiper spaceBetween={50}
+                    {/* <div className="grid grid-cols-1s sm:grid-cols-3 align-start" style={{gridTemplateRows: "masonry"}}> */}
+                    <div className="grid grid-cols-3" style={{gridTemplateRows: "masonry"}} >
+                    {/* TODO: fix this lazy shit */}
+                    {[project.media[0]].map((t: any) => {
+                            const isImage = t[0].includes("png") || t[0].includes("jpg");
+                            const isVideo = t[0].includes("youtu");
+                            return <div className={"flex flex-col items-center align-middle justify-center"+(isVideo ? " col-span-2" : "")} key={t[0]}>
+                                {isImage ? 
+                                    <img style={{maxWidth: "80%", margin: "auto", marginBottom: 30}} src={t[0]} alt={t[1]} /> :
+                                isVideo ? 
+                                    <YouTubeEmbed src={t[0]}>Failed to load video</YouTubeEmbed> :
+                                 "Unrecognized media type "+t[0]
+                                }
+                            </div>
+                        })}
+                        </div>
+                    {/* </div> */}
+                    {/* <Swiper spaceBetween={50}
                             modules={[Navigation, Pagination, EffectFlip]}
                             mousewheel={true}
                             className="min-h-[200px]"
@@ -107,7 +143,7 @@ const ProjectPage: NextPage<ProjectProps> = ({project}) => {
                                 }
                             </SwiperSlide>
                         })}
-                    </Swiper>
+                    </Swiper> */}
                 </CardInner>
                 <CardInner reverse type="M">
                     <div className="m-4 flex flex-wrap text-xs">

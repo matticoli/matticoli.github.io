@@ -21,7 +21,7 @@ export interface Project {
     status: string
     timeline: string
     achievements: string[]
-    media: [[string, string?]]
+    media: Array<[string, string?]>
     links: [[string, string?]]
     content: string
 }
