@@ -3,7 +3,7 @@ title: The Call of Karen
 slug: call-of-karen
 cover: "/assets/call-of-karen-cover.png"
 excerpt: Award-winning comedy PC simulator game about a 1950's suburban housewife whose home is invaded by Cthulhu.
-roles: Lead Systems Programmer, Technical Designer
+roles: Systems Programmer, Technical Designer
 color: "#1A0032"
 tags:
   - ["Unreal", "#121212"]
