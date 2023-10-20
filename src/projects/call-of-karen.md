@@ -2,7 +2,7 @@
 title: The Call of Karen
 slug: call-of-karen
 cover: "/assets/call-of-karen-cover.png"
-excerpt: Award-winning comedy PC simuMontserratr game about a 1950's suburban housewife whose home is invaded by Cthulhu.
+excerpt: Award-winning comedy PC simulator game about a 1950's suburban housewife whose home is invaded by Cthulhu.
 roles: Programmer, Technical Designer
 color: "#1A0032"
 tags:
@@ -36,7 +36,7 @@ links:
   - ["Paper", "https://digital.wpi.edu/pdfviewer/b5644v04t"]
 ---
 ## Description
-The Call of Karen is a PC simulation comedy game about a 1950s suburban housewife whose home is invaded by Cthulhu. Play as Karen, trapped in an unhappy marriage taking care of an ungrateful child, and faced with the struggle of keeping up appearances in the face of a home gone
+The Call of Karen is a PC simulator comedy game about a 1950s suburban housewife whose home is invaded by Cthulhu. Play as Karen, trapped in an unhappy marriage taking care of an ungrateful child, and faced with the struggle of keeping up appearances in the face of a home gone
 mad.
 
 As a programmer and tech artist on a small team, I contributed to all aspects of design, development, and release.
