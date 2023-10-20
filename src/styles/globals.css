@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Open%20Sans:regular,bold,italic');
 @import url('https://fonts.googleapis.com/css?family=Lexend:regular,bold,italic&subset=latin,latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Lexend+Giga:regular,bold,italic&subset=latin,latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic');
+@import url('https://fonts.googleapis.com/css?family=Lexend+Exa:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,medium,bold,italic&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
     background-color: rgb(15 23 42);
+    font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Montserrat', 'Helvetica Neue', sans-serif;
 }
 
 @layer base {
-
     :root {
         --primary: #6189B9;
     }

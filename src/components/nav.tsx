@@ -15,7 +15,7 @@ export default function Nav(props: any) {
 
     return <>
 
-        <div style={{ 'minHeight': 60, fontFamily: 'Montserrat, Helvetica, sans-serif', overflow: 'initial' }}
+        <div style={{ 'minHeight': 60, fontFamily: 'Lexend, Helvetica, sans-serif', letterSpacing: 1.3, fontWeight: 500, overflow: 'initial' }}
             className={(props.sticky ? "sticky lg:hidden " : "") + "lg:sticky top-0 z-20 w-full flex flex-col lg:flex-row backdrop-blur-sm border-[#121212] border-b-[1px] bg-black/80 p-4 lg:pl-20 lg:pr-20 text-center"}>
             {!props.sticky && <>
                 <Link href="/" className="flex flex-row flex-1 text-left justify-left">

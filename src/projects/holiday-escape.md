@@ -23,17 +23,17 @@ achievements:
   - Strong praise from new and returning customers
   - 90% Completion rate with no players reporting it as too easy
 media:
-  - ["/assets/escaperoom-car.jpg", "A dining train car themed escape room set"]
-  - ["/assets/escaperoom-map.jpg", "A wooden map puzzle with light-up electronic buttons"]
-  - ["/assets/escaperoom-screen.jpg", "Game master's video feed of the escape room with players inside"]
   - ["/assets/escaperoom-train.jpg", "A false wall painted to look like a train on a train platform set"]
+  - ["/assets/escaperoom-screen.jpg", "Game master's video feed of the escape room with players inside"]
+  - ["/assets/escaperoom-map.jpg", "A wooden map puzzle with light-up electronic buttons"]
+  - ["/assets/escaperoom-car.jpg", "A dining train car themed escape room set"]
   - ["https://www.youtube.com/embed/4J_MeGeoCak?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0"]
 links:
   - ["Website", "https://escaperoom.wpi.edu/"]
 ---
 ## Description
 Holiday Escape was a week-long escape room installation designed and built through the collaborative effort of 16 graduate and undergraduate students. The project involved the design, implementation, and integration of various codebreaking, strategy, and skill-based puzzles for teams of 5-7. Several of these included custom electronics such as microcontroller-driven buttons, lights, solenoids, and locks in combination with traditional combination locks. 
-![Electronic map puzzle](http://localhost:3000/assets/escaperoom-map.jpg)
+![Electronic map puzzle](/assets/escaperoom-map.jpg)
 The second stage of the escape room (the train) featured a live view out the "windows" of the train using 2 TVs driven by a Unity scene, which become interactive in the final puzzle where player's must all work together to press buttons located around the room based on directions from a digital character outside the window.
 
 The room control system utilized a custom timer program with "cutscene" video, and provided a live video and audio feed of the full room to the game-master located outside. The puzzle master, playing the role of Jingle the Elf - leader of the elf crew that hijacked the train, was able to communicate with players in real-time via a 2-way audio stream (the train's "PA system" and some hidden microphones), in order to provide hints and comedic commentary.

@@ -7,11 +7,11 @@ export default function ProjectTile(props: any) {
     return <>
         <CardInner type="M" className="w-80 min-h-80 bg-[#2c2c2cCC] max-w-xxl sm:max-w-sm flex flex-row gap-1">
             <div className="flex-shrink flex flex-col max-w-xxl sm:max-w-sm w-80">
-            <div className="w-80 p-2 mb-4 text-center bg-[#121212] text-sm font-bold">
+            <div className="w-80 p-2 mb-4 text-center bg-[#121212] text-sm font-bold rounded-sm">
             {props.roles}
             </div>
             <a href={`/projects/${props.slug}`}>
-                <img    className="w-full max-w-80 rounded-md border-2" 
+                <img    className="w-full max-w-80 rounded-sm border-2" 
                         style={{borderColor: props.color}}  
                         title={props.title} 
                         alt={`${props.title} title card`} 
@@ -23,7 +23,7 @@ export default function ProjectTile(props: any) {
                 })}
             </div>
             <p className="text-md p-2 text-left">{props.excerpt}</p>
-            <Button href={`/projects/${props.slug}`} className="ml-auto mr-auto text-sm w-40 h-10">{'More Info >>'}</Button>
+            <Button href={`/projects/${props.slug}`} className="ml-auto mr-auto text-sm h-10 rounded-sm">{'More Info >>'}</Button>
         </div>
         </CardInner>
     </> 
