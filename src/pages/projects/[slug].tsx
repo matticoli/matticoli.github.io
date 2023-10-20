@@ -9,7 +9,7 @@ import {EffectFlip, Navigation, Pagination } from 'swiper';
 import { Project } from './../api/projects-static';
 
 const iconClass= "text-primary inline ml-2 mb-1"
-const iconButton= "text-primary ml-2 mb-1"
+const iconButton= "text-primary ml-2 mb-1 text-white"
 const iconMap : Record<string, JSX.Element> = {
     "Website": <div className="p-4 rounded-lg bg-primary"><FaLink /></div>,
     "Steam": <div style={{backgroundColor: '#2c4059'}} className={iconButton+" p-4 rounded-lg text-xl"}><FaSteam /></div>,
