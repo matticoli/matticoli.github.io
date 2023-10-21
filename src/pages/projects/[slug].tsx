@@ -5,7 +5,7 @@ import { CardInner, CardOuter } from '../../components/card'
 import { getProjectData, getProjectPaths } from '../api/projects-static'
 import Badge from './../../components/badge';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {EffectFlip, Navigation, Pagination } from 'swiper';
+import {EffectFlip, Navigation, Pagination } from 'swiper/modules';
 import { Project } from './../api/projects-static';
 
 const iconClass= "text-primary inline ml-2 mb-1"
