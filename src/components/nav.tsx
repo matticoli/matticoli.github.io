@@ -14,21 +14,16 @@ export default function Nav(props: any) {
     };
 
     return <>
-
         <div style={{ 'minHeight': 60, fontFamily: 'Lexend, Helvetica, sans-serif', letterSpacing: 1.3, fontWeight: 500, overflow: 'initial' }}
             className={(props.sticky ? "sticky lg:hidden " : "") + "lg:sticky top-0 z-20 w-full flex flex-col lg:flex-row backdrop-blur-sm border-[#121212] border-b-[1px] bg-black/80 p-4 lg:pl-20 lg:pr-20 text-center"}>
             {!props.sticky && <>
                 <Link href="/" className="flex flex-row flex-1 text-left justify-left">
-                    {/* <img src={'/assets/logo.png'}
-                        style={{ maxHeight: 50, maxWidth: 50 }}
-                        className="flex-none hidden lg:block"
-                        alt="Mikel's personal logo - a programmer terminal, gear, and checkox inside a lightbulb" /> */}
                     <div className="flex flex-col flex-grow text-center lg:text-left">
-                        <h2 className="text-2xl">
+                        <h2 className="text-3xl">
                             Mikel Matticoli
                         </h2>
                         <h3 className="text-xs">
-                            {'Technical Designer  •  Engineer'}
+                            {'Full Stack Engineer • UX Designer'}
                         </h3>
                     </div>
                 </Link>
