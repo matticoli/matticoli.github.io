@@ -2,8 +2,8 @@
 title: JHDB Global Contributor Portal
 slug: jhdb-contributor-portal
 cover: /assets/jhdb-cover.png
-excerpt: Accessible tool for the global jazz community to contribute historical artifacts and full exhibits to the Jazz History Database.
-roles: Lead Engineer, Technical Designer
+excerpt: Accessible tool for the global jazz community to contribute historical artifacts and digital exhibits to the Jazz History Database.
+roles: Technical Director, Full Stack Dev, UXD
 color: "#EEE"
 tags:
   - ["React", "#1F8AB0"]
@@ -14,7 +14,7 @@ featured: true
 priority: 2
 type: Web App
 type_icon: web
-responsibilities: Project Manager, Systems Administrator
+responsibilities: Stakeholder Communications, Software Architecture, Interaction Design
 team_size: 3
 status: Shipped June 2020, Actively in Use
 timeline: Mar 2019 - Jun 2020

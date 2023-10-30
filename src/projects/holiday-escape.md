@@ -3,7 +3,7 @@ title: Holiday Escape
 slug: holiday-escape
 cover: /assets/holiday-escape-cover.png
 excerpt: A week-long holiday themed escape room installation combining of digital, electromechanical, and traditional puzzles.
-roles: Producer, Technical Designer
+roles: Producer, Technical Director
 color: "#B7CCEB"
 tags:
   - ["Wood", "#BA7637"]
@@ -14,7 +14,7 @@ featured: true
 priority: 0
 type: Escape Room
 type_icon: escape
-responsibilities: Budget Managemenent, Team Lead, Software and Electronics Implementation
+responsibilities: Budget Managemenent, Customer Communications, Software and Electronics Implementation
 team_size: 18
 status: Completed Dec 11, 2021
 timeline: Nov 2021 - Dec 2021
