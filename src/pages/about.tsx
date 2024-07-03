@@ -10,7 +10,7 @@ const About: NextPage = () => {
       <span className="h-20" />
       <CardOuter>
         <CardInner>
-          <div className="flex flex-col sm:flex-row sm:gap-10 p-4 mt-[-100px] justify-center items-center sm:gap-0">
+          <div className="flex flex-col sm:flex-row p-4 mt-[-100px] justify-center items-center sm:gap-0">
             <div className="w-60 flex flex-col gap-1">
               <img  src="/assets/profile.png" 
                     className="w-40 h-40 max-w-40 max-h-40 ml-auto mr-auto rounded-full bg-white border-2 border-white"
@@ -38,9 +38,9 @@ const About: NextPage = () => {
               Looking for my resume? Here it is!
             </h3>
           </div>
-          <div className="flex flex-row gap-5 m-5 justify-center">
-            <Button className="w-20 sm:w-80 flex flex-row justify-center m-auto gap-2 text-lg" href="/resume.pdf"><FaFilePdf className="mt-auto mb-auto" /><span className="hidden sm:block">PDF Download</span></Button>
-            <Button className="w-20 sm:w-80 flex flex-row justify-center m-auto gap-2 text-lg" href="https://linkedin.com/in/matticoli"><FaLinkedin className="mt-auto mb-auto" /><span className="hidden sm:block">LinkedIn</span></Button>
+          <div className="flex flex-col md:flex-row gap-5 m-5 justify-center">
+            <Button className="w-20 sm:w-80 max-w-[80%] flex flex-row justify-center m-auto gap-2 text-lg" href="/resume.pdf"><FaFilePdf className="mt-auto mb-auto" /><span className="hidden sm:block">PDF Download</span></Button>
+            <Button className="w-20 sm:w-80 max-w-[80%] flex flex-row justify-center m-auto gap-2 text-lg" href="https://linkedin.com/in/matticoli"><FaLinkedin className="mt-auto mb-auto" /><span className="hidden sm:block">LinkedIn</span></Button>
           </div>
           <iframe className="w-full sm:w-10/12 h-[70vw]" src="https://docs.google.com/gview?embedded=true&url=https://matticoli.net/resume.pdf">Failed to load resume - download <a href="/resume.pdf" target="_blank">here</a></iframe>
         </CardInner>

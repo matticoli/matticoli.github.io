@@ -20,7 +20,7 @@ const Home: NextPage = (props: any) => {
     <>
       <PageContainer title="Home">
         <div className="flex flex-row align-left justify-left">
-          <Elec className="flex-shrink mt-2 left-2" />
+          {/* <Elec className="flex-shrink mt-2 left-2" /> */}
           <span className="flex-grow w-11/12 sm:w-10/12 lg:w-9/12 xl:w-8/12" />
         </div>
         <CardOuter>
