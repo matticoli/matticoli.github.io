@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import { FaClock, FaDesktop, FaLink,  FaMedal, FaTasks, FaUserAstronaut, FaUsers, FaSteam, FaBook, FaWindows, FaDoorOpen } from "react-icons/fa"
+import { ReactNode } from 'react'
 import PageContainer from '../../components/page-container'
 import { CardInner, CardOuter } from '../../components/card'
 import { getProjectData, getProjectPaths } from '../api/projects-static'
@@ -10,7 +11,7 @@ import { Project } from './../api/projects-static';
 
 const iconClass= "text-primary inline ml-2 mb-1"
 const iconButton= "text-primary ml-2 mb-1 text-white"
-const iconMap : Record<string, () => JSX.Element> = {
+const iconMap : Record<string, () => ReactNode> = {
     "Website": () => <div className="p-4 rounded-lg bg-primary"><FaLink /></div>,
     "Steam": () => <div style={{backgroundColor: '#2c4059'}} className={iconButton+" p-4 rounded-lg text-xl"}><FaSteam /></div>,
     "Paper": () => <div style={{backgroundColor: '#6189b9'}} className={iconButton+" p-4 rounded-lg text-xl"}><FaBook /></div>,
