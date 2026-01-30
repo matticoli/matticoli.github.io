@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Button from '../components/button'
 import { CardInner, CardOuter } from '../components/card'
-import Elec from '../components/elec'
 import Hi from '../components/hi'
 import PageContainer from '../components/page-container'
 import ProjectTile from '../components/project-tile'
@@ -20,7 +19,6 @@ const Home: NextPage = (props: any) => {
     <>
       <PageContainer title="Home">
         <div className="flex flex-row align-left justify-left">
-          {/* <Elec className="flex-shrink mt-2 left-2" /> */}
           <span className="flex-grow w-11/12 sm:w-10/12 lg:w-9/12 xl:w-8/12" />
         </div>
         <CardOuter>
