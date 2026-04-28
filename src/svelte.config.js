@@ -7,6 +7,9 @@ const config = {
     adapter: adapter(),
     files: {
       assets: 'public'
+    },
+    paths: {
+      base: process.env.BASE_PATH ?? ''
     }
   },
   preprocess: [vitePreprocess()]
