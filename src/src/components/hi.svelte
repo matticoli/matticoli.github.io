@@ -31,6 +31,6 @@
 
 <div class="flex flex-1 flex-col items-center justify-center text-center p-4 w-full h-20 {className}">
   <h2 style="font-family: 'Montserrat, Helvetica, sans-serif'" class="text-2xl sm:text-3xl font-bold text-primary">
-    {#if $displayText}{ $displayText }|{/if}
+    {#if $displayText}{ $displayText }_{/if}
   </h2>
 </div>

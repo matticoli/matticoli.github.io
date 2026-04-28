@@ -1,5 +1,5 @@
 <section class="w-full flex flex-col items-center justify-center">
-  <span class="h-20" />
+  <span class="h-20"></span>
   <div class="backdrop-blur-sm w-11/12 sm:w-10/12 lg:w-9/12 mr-10 ml-10 mt-5 mb-5 bg-[#121212CC] rounded-3xl">
     <div class="p-5 m-5 bg-[#2c2c2cCC] rounded-3xl">
       <div class="flex flex-col sm:flex-row p-4 mt-[-100px] justify-center items-center sm:gap-0">
@@ -69,6 +69,7 @@
       </div>
       <iframe
         class="w-full sm:w-10/12 h-[70vw]"
+        title="Resume preview"
         src="https://docs.google.com/gview?embedded=true&url=https://matticoli.net/resume.pdf"
       >
         Failed to load resume - download <a href="/resume.pdf" target="_blank" rel="noreferrer">here</a>
@@ -76,5 +77,5 @@
     </div>
   </div>
 
-  <span class="h-10" />
+  <span class="h-10"></span>
 </section>
