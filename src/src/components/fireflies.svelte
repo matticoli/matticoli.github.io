@@ -2,6 +2,6 @@
   import '../styles/fireflies.css';
 </script>
 
-{#each Array(30) as _, i}
+{#each { length: 30 } as _, i}
   <div class="firefly"></div>
 {/each}

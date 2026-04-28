@@ -3,7 +3,7 @@
 </script>
 
 <div
-  class="flex flex-col gap-2 text-left bg-zinc-900 fixed transition-all duration-300 max-h-screen max-w-[600px] z-40 bottom-40 w-8/12 h-auto p-5 text-xs text-center drop-shadow-lg right-10 origin-right"
+  class="flex flex-col gap-2 text-left bg-zinc-900 fixed transition-all duration-300 max-h-screen max-w-[600px] z-40 bottom-40 w-8/12 h-auto p-5 text-xs drop-shadow-lg right-10 origin-right"
   class:opacity-0={!open}
   class:-rotate-90={!open}
   class:translate-x-20={!open}

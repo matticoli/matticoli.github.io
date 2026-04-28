@@ -3,14 +3,10 @@
 
   const active = 'underline underline-offset-4 decoration-primary text-primary hover:text-white-200';
 
-  $: isActive = (path?: string): boolean => {
+  function isActive(path?: string): boolean {
     const currentPath = $page.url.pathname;
-    if (path) {
-      return currentPath.toLowerCase().includes(path);
-    } else {
-      return currentPath === '/';
-    }
-  };
+    return path ? currentPath.toLowerCase().includes(path) : currentPath === '/';
+  }
 </script>
 
 <div
