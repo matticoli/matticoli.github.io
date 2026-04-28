@@ -10,7 +10,7 @@
 </script>
 
 <div
-  style="min-height: 60px; font-family: 'Lexend, Helvetica, sans-serif'; letter-spacing: 1.3px; font-weight: 500; overflow: initial;"
+  style="min-height: 60px; font-family: Lexend, Helvetica, sans-serif; letter-spacing: 1.3px; font-weight: 500; overflow: initial;"
   class="sticky top-0 z-20 w-full flex-col lg:flex-row backdrop-blur-sm border-[#121212] border-b bg-black/80 p-4 lg:pl-20 lg:pr-20 text-center flex"
 >
   <a href="/" class="flex flex-row flex-1 text-left justify-start">
