@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { base, assets } from '$app/paths';
+</script>
+
 <section class="w-full flex flex-col items-center justify-center">
   <span class="h-20"></span>
   <div class="backdrop-blur-sm w-11/12 sm:w-10/12 lg:w-9/12 mr-10 ml-10 mt-5 mb-5 bg-[#121212CC] rounded-3xl">
@@ -5,7 +9,7 @@
       <div class="flex flex-col sm:flex-row p-4 mt-[-100px] justify-center items-center sm:gap-0">
         <div class="w-60 flex flex-col gap-1">
           <img
-            src="/assets/profile.png"
+            src="{assets}/assets/profile.png"
             class="w-40 h-40 max-w-40 max-h-40 ml-auto mr-auto rounded-full bg-white border-2 border-white"
             title="It's me!"
             alt="A dark-haired man wearing rectangular glasses, a frog t-shirt, and black jacket+beanie"
@@ -50,13 +54,13 @@
   <div class="backdrop-blur-sm w-11/12 sm:w-10/12 lg:w-9/12 mr-10 ml-10 mt-5 mb-5 bg-[#121212CC] rounded-3xl">
     <div class="p-5 m-5 bg-[#2c2c2cCC] rounded-3xl flex flex-col items-center">
       <div class="p-4 flex flex-col sm:flex-row gap-2 justify-center">
-        <img class="ml-auto mr-auto max-w-20 w-20" src="/assets/day22-owl.png" alt="Owl illustration" />
+        <img class="ml-auto mr-auto max-w-20 w-20" src="{assets}/assets/day22-owl.png" alt="Owl illustration" />
         <h3 class="text-primary text-lg sm:text-2xl mt-auto mb-auto">Looking for my resume? Here it is!</h3>
       </div>
       <div class="flex flex-col md:flex-row gap-5 m-5 justify-center">
         <a
           class="w-20 sm:w-80 max-w-[80%] flex flex-row justify-center m-auto gap-2 text-lg bg-primary text-white py-3 rounded-sm text-center"
-          href="/resume.pdf"
+          href="{base}/resume.pdf"
         >
           PDF Download
         </a>

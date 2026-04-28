@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { PageData } from './$types';
   import Hi from '../components/hi.svelte';
+  import { base, assets } from '$app/paths';
 
   export let data: PageData;
   const { projects } = data;
@@ -16,7 +17,7 @@
       <div class="flex flex-wrap items-center justify-center">
         <img
           class="sm:w-6/12 w-40"
-          src="/assets/111-coding.png"
+          src="{assets}/assets/111-coding.png"
           alt="A web illustration of a smiling coffy cup and a clipboard checklist next to a laptop"
         />
       </div>
@@ -37,7 +38,7 @@
             <div class="w-80 p-2 mb-4 text-center bg-[#121212] text-sm font-bold rounded-sm">
               {proj.roles}
             </div>
-            <a href={`/projects/${proj.slug}`}>
+            <a href={`${base}/projects/${proj.slug}`}>
               <img
                 class="w-full max-w-80 rounded-sm border-2"
                 style={`border-color: ${proj.color}`}
@@ -58,7 +59,7 @@
             </div>
             <p class="text-md p-2 text-left">{proj.excerpt}</p>
             <a
-              href={`/projects/${proj.slug}`}
+              href={`${base}/projects/${proj.slug}`}
               class="ml-auto mr-auto mb-4 flex-shrink text-center justify-center items-center p-3 w-60 h-10 leading-tight bg-primary text-white hover:bg-blue-600 hover:-translate-y-1 active:scale-95 rounded-sm text-sm"
             >
               More Info &gt;&gt;
@@ -67,7 +68,7 @@
         </article>
       {/each}
       <div class="p-5 m-5 bg-[#2c2c2cCC] rounded-3xl w-80 h-40 flex flex-col justify-center">
-        <a href="/projects" class="m-auto w-60 text-xl text-center bg-primary text-white py-3 rounded-sm hover:bg-blue-600 hover:-translate-y-1 active:scale-95">
+        <a href="{base}/projects" class="m-auto w-60 text-xl text-center bg-primary text-white py-3 rounded-sm hover:bg-blue-600 hover:-translate-y-1 active:scale-95">
           All Projects
         </a>
       </div>

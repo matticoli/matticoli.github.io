@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { PageData } from './$types';
+  import { base } from '$app/paths';
 
   export let data: PageData;
   const { project } = data;
@@ -14,7 +15,7 @@
 <section class="w-full bg-black p-6">
   <h1 class="text-4xl">{project.title}</h1>
   <span class="text-xs text-[var(--primary)]">
-    <a class="underline" href="/projects">projects</a> &gt; {project.slug}
+    <a class="underline" href="{base}/projects">projects</a> &gt; {project.slug}
   </span>
 </section>
 
