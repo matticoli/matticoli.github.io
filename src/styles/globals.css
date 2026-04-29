@@ -13,7 +13,7 @@ body {
 
 @layer base {
     :root {
-        --primary: #6189B9;
+        --primary: #88C0F7;
     }
 
     .rounded-tl-4xl {

@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { BsTools, BsFillPersonLinesFill, BsFillHouseFill } from 'react-icons/bs';
+import { BsTools, BsFillHouseFill, BsFillPersonFill } from 'react-icons/bs';
 
 export default function Nav(props: any) {
     const router = useRouter();
@@ -31,13 +31,16 @@ export default function Nav(props: any) {
             <div className={(!props.sticky ? "hidden lg:flex " : "") + "flex justify-center text-sm text-center lg:justify-left lg:text-left lg:text-lg gap-8 md:gap-12 lg:mr-4 "}>
                 <span className="flex-1 hidden lg:block" />
                 <Link className={"flex flex-row gap-2 w-30 hover-text-primary" + (routeDec())} href="/">
-                    <BsFillHouseFill className="mt-auto mb-auto" /><span className="mb-auto mt-auto">Home</span>
+                    <BsFillHouseFill className="mt-auto mb-auto" />
+                    <span className="mb-auto mt-auto">Home</span>
                 </Link>
                 <Link className={"flex flex-row gap-2 w-30 hover-text-primary" + (routeDec('about'))} href="/about">
-                    <BsFillPersonLinesFill className="mt-auto mb-auto" /><span className="mb-auto mt-auto"> About</span>
+                    <BsFillPersonFill className="mt-auto mb-auto" />
+                    <span className="mb-auto mt-auto"> About</span>
                 </Link>
                 <Link className={"flex flex-row gap-2 w-30 hover-text-primary" + (routeDec('projects'))} href="/projects">
-                    <BsTools className="mt-auto mb-auto" /><span className="mb-auto mt-auto">Projects</span>
+                    <BsTools className="mt-auto mb-auto" />
+                    <span className="mb-auto mt-auto">Projects</span>
                 </Link>
             </div>
         </div>
