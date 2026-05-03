@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import { FaClock, FaDesktop, FaLink,  FaMedal, FaTasks, FaUserAstronaut, FaUsers, FaSteam, FaBook, FaWindows, FaDoorOpen } from "react-icons/fa"
+import { ReactNode } from 'react'
 import PageContainer from '../../components/page-container'
 import { CardInner, CardOuter } from '../../components/card'
 import { getProjectData, getProjectPaths } from '../api/projects-static'
@@ -10,12 +11,12 @@ import { Project } from './../api/projects-static';
 
 const iconClass= "text-primary inline ml-2 mb-1"
 const iconButton= "text-primary ml-2 mb-1 text-white"
-const iconMap : Record<string, JSX.Element> = {
-    "Website": <div className="p-4 rounded-lg bg-primary"><FaLink /></div>,
-    "Steam": <div style={{backgroundColor: '#2c4059'}} className={iconButton+" p-4 rounded-lg text-xl"}><FaSteam /></div>,
-    "Paper": <div style={{backgroundColor: '#6189b9'}} className={iconButton+" p-4 rounded-lg text-xl"}><FaBook /></div>,
-    "windows": <FaWindows className={iconClass+" text-primary ml-auto mr-auto"} />,
-    "escape": <FaDoorOpen className={iconClass} />,
+const iconMap : Record<string, () => ReactNode> = {
+    "Website": () => <div className="p-4 rounded-lg bg-primary"><FaLink /></div>,
+    "Steam": () => <div style={{backgroundColor: '#2c4059'}} className={iconButton+" p-4 rounded-lg text-xl"}><FaSteam /></div>,
+    "Paper": () => <div style={{backgroundColor: '#6189b9'}} className={iconButton+" p-4 rounded-lg text-xl"}><FaBook /></div>,
+    "windows": () => <FaWindows className={iconClass+" text-primary ml-auto mr-auto"} />,
+    "escape": () => <FaDoorOpen className={iconClass} />,
 };
 
 
@@ -54,7 +55,7 @@ const ProjectPage: NextPage<ProjectProps> = ({project}) => {
             <CardOuter override className="h-fit sm:flex-initial backdrop-blur-sm sm:min-w-[250px] w-full ml-auto mr-auto sm:w-full lg:w-[30%] ">
                 <CardInner type="" className="flex flex-col p-0 pl-0 pt-0 pb-0 pr-0 text-left">
                     <h3 className="text-primary text-xs font-medium">Project Type
-                        {iconMap[project.type_icon] || <FaDesktop className={iconClass} />}
+                        {iconMap[project.type_icon] ? iconMap[project.type_icon]() : <FaDesktop className={iconClass} />}
                     </h3>
                     <p className="text-sm font-medium mb-5">{project.type}</p>
                     <h3 className="text-primary text-xs font-medium">My Roles
@@ -104,7 +105,7 @@ const ProjectPage: NextPage<ProjectProps> = ({project}) => {
                                     <img style={{maxWidth: "80%", margin: "auto", marginBottom: 30}} src={t[0]} alt={t[1]} /> :
                                  t[0].includes("youtu") ? 
                                     <YouTubeEmbed src={t[0]}>Failed to load video</YouTubeEmbed> :
-                                 "Unrecognized media type "+t[0]
+                                 <span>Unrecognized media type {t[0]}</span>
                                 }
                             </SwiperSlide>
                         })}
@@ -121,7 +122,7 @@ const ProjectPage: NextPage<ProjectProps> = ({project}) => {
                 </CardInner>
                 <CardInner reverse type="B" className="flex flex-row gap-4 justify-center">
                     {project.links.map((link: [string, string?]) => {
-                        return <a className="hover:scale-110 hover:-translate-y-1" key={link[0]} href={link[1]}>{iconMap[link[0]] || link[0]}</a>
+                        return <a className="hover:scale-110 hover:-translate-y-1" key={link[0]} href={link[1]}>{iconMap[link[0]] ? iconMap[link[0]]() : link[0]}</a>
                     })}
                 </CardInner>
             </CardOuter>

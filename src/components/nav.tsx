@@ -15,29 +15,36 @@ export default function Nav(props: any) {
 
     return <>
         <div style={{ 'minHeight': 60, fontFamily: 'Lexend, Helvetica, sans-serif', letterSpacing: 1.3, fontWeight: 500, overflow: 'initial' }}
-            className={(props.sticky ? "sticky lg:hidden " : "") + "lg:sticky top-0 z-20 w-full flex flex-col lg:flex-row backdrop-blur-sm border-[#121212] border-b-[1px] bg-black/80 p-4 lg:pl-20 lg:pr-20 text-center"}>
+            className={(props.sticky ? "sticky lg:hidden " : "hidden lg:flex lg:sticky ") + "top-0 z-20 w-full flex-row backdrop-blur-sm border-[#121212] border-b-[1px] bg-black/80 p-4 lg:pl-20 lg:pr-20 items-center"}>
             {!props.sticky && <>
-                <Link href="/" className="flex flex-row flex-1 text-left justify-left">
-                    <div className="flex flex-col flex-grow text-center lg:text-left">
-                        <h2 className="text-3xl">
-                            Mikel Matticoli
-                        </h2>
-                        <h3 className="text-xs">
-                            {'Full Stack Engineer • UX Designer'}
-                        </h3>
+                <Link href="/">
+                    <div className="flex flex-row flex-grow text-left">
+                        <div className="flex flex-col">
+                            <h2 className="text-3xl">
+                                Mikel Matticoli
+                            </h2>
+                            <h3 className="text-xs">
+                                {'Full Stack Engineer • UX Designer'}
+                            </h3>
+                        </div>
                     </div>
                 </Link>
             </>}
-            <div className={(!props.sticky ? "hidden lg:flex " : "") + "flex justify-center text-sm text-center lg:justify-left lg:text-left lg:text-lg gap-8 md:gap-12 lg:mr-4 "}>
-                <span className="flex-1 hidden lg:block" />
-                <Link className={"flex flex-row gap-2 w-30 hover-text-primary" + (routeDec())} href="/">
-                    <BsFillHouseFill className="mt-auto mb-auto" /><span className="mb-auto mt-auto">Home</span>
+            <div className="flex flex-row justify-end items-center gap-8 md:gap-12 ml-auto text-sm lg:text-lg">
+                <Link href="/">
+                    <div className={"flex flex-row gap-2 hover-text-primary whitespace-nowrap" + (routeDec())}>
+                        <BsFillHouseFill className="mt-auto mb-auto" /><span className="mb-auto mt-auto">Home</span>
+                    </div>
                 </Link>
-                <Link className={"flex flex-row gap-2 w-30 hover-text-primary" + (routeDec('about'))} href="/about">
-                    <BsFillPersonLinesFill className="mt-auto mb-auto" /><span className="mb-auto mt-auto"> About</span>
+                <Link href="/about">
+                    <div className={"flex flex-row gap-2 hover-text-primary whitespace-nowrap" + (routeDec('about'))}>
+                        <BsFillPersonLinesFill className="mt-auto mb-auto" /><span className="mb-auto mt-auto"> About</span>
+                    </div>
                 </Link>
-                <Link className={"flex flex-row gap-2 w-30 hover-text-primary" + (routeDec('projects'))} href="/projects">
-                    <BsTools className="mt-auto mb-auto" /><span className="mb-auto mt-auto">Projects</span>
+                <Link href="/projects">
+                    <div className={"flex flex-row gap-2 hover-text-primary whitespace-nowrap" + (routeDec('projects'))}>
+                        <BsTools className="mt-auto mb-auto" /><span className="mb-auto mt-auto">Projects</span>
+                    </div>
                 </Link>
             </div>
         </div>
