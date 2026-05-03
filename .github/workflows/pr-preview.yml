@@ -34,6 +34,10 @@ jobs:
           BASE_PATH: /pr-preview/pr-${{ github.event.pull_request.number }}
         run: npm run build
 
+      - name: Add .nojekyll
+        if: github.event.action != 'closed'
+        run: touch src/build/.nojekyll
+
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
